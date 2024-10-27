@@ -7,3 +7,26 @@ Witherbark 위더바크 - 마른나무껍질 (부족)
 팅크마스터 - 수석땜장이
 Transponder - 응답장치
 Tinkerer - 땜장이
+아즈라이트 비늘 - 하늘빛 비늘 - Azure Scale
+Blue Dragonflight - 블루 드래곤플라이트 - 푸른 용군단
+레이크 멘나르 - 멘나르 호수
+Flaxwhisker Front - 플렉스위스커 프런트
+Gyronautical Compass - 자이로나우티컬 컴퍼스
+Gigno - 지노
+Thorium Widget - 토륨 부품
+Unstable Trigger - 유동성 제동장치
+Caravan - 짐마차
+Watch Paladin - 감시터 성기사
+Deadwind Pass - 죽음의 고개
+Sorrowguard keep - 슬픔의수호 요새
+Quartermaster - 병참장교
+Marsh Inkspewer - 늪지멀록 먹물쟁이
+Marsh Murloc - 늪지멀록
+Marsh Flesheater - 늪지멀록 청소부
+Tirisfal Uplands - 티리스팔 고원지대
+The Dead Fields - 죽음의 농장
+Steepcliff Port - 가파른절벽 항구
+Pesterhide Gnoll - 점박이 놀
+Ragged Armband - 너덜너덜한 팔찌
+Glenshire - 글렌샤이어
+Deathguard - 데스가드 - 죽음의 경비병
