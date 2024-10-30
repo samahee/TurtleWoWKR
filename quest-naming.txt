@@ -23,10 +23,20 @@ Quartermaster - 병참장교
 Marsh Inkspewer - 늪지멀록 먹물쟁이
 Marsh Murloc - 늪지멀록
 Marsh Flesheater - 늪지멀록 청소부
-Tirisfal Uplands - 티리스팔 고원지대
+Tirisfal Uplands - 티리스팔 고원
 The Dead Fields - 죽음의 농장
 Steepcliff Port - 가파른절벽 항구
 Pesterhide Gnoll - 점박이 놀
 Ragged Armband - 너덜너덜한 팔찌
 Glenshire - 글렌샤이어
 Deathguard - 데스가드 - 죽음의 경비병
+Worgen - 워겐 - 늑대인간
+Tirisclaw - 티리스클로우 - 검은발톱
+Foulweald - 펄위드 - 썩은나무일족
+Grovetender - 그로브텐더 - 숲지기
+Wallowfin Murloc - 왈로핀 멀록 - 거친해안 멀록
+Deckmaster - 갑판장
+Remnant - 잔존세력
+Booty Bay - 무법항
+Ghostpaw - 유령발늑대
+애쉬엔베일 - 잿빛 골짜기 - Ashenvale
