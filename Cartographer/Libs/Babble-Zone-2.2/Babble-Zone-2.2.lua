@@ -1103,7 +1103,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Gillijim's Isle"] = "길리짐의 섬",
         ["Gilneas"] = "길니아스",
 		["GM Island"] = "GM의 안식처",
-		["Scarlet Enclave"] = "은빛십자군",
+		["Scarlet Enclave"] = "붉은십자군 초소",
 
 	}
 end)

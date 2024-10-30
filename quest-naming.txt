@@ -10,7 +10,7 @@ Tinkerer - 땜장이
 아즈라이트 비늘 - 하늘빛 비늘 - Azure Scale
 Blue Dragonflight - 블루 드래곤플라이트 - 푸른 용군단
 레이크 멘나르 - 멘나르 호수
-Flaxwhisker Front - 플렉스위스커 프런트
+Flaxwhisker Front - 플렉스위스커 프런트 -> 수정 플렉스위스커 전초기지
 Gyronautical Compass - 자이로나우티컬 컴퍼스
 Gigno - 지노
 Thorium Widget - 토륨 부품
