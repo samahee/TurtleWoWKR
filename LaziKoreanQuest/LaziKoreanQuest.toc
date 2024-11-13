@@ -1,0 +1,15 @@
+## Interface: 11200
+## Title: |CFF3399FFLazinism |CFFFFFFFFKorean Quest  |cFFFF0000Ver |cff00ff001.0.0
+## Title-koKR: |CFF3399FFLazinism |CFFFFFFFF한글 퀘스트 |cFFFF0000Ver |cff00ff001.0.0
+## Notes: Korean Quest are displayed on QuestLog - Made By : Lazinism / cafe.naver.com/Lazinism
+## Notes-koKR: 퀘스트프레임과 퀘스트로그에서 우리말로 된 퀘스트 내용이 표시됩니다. 제작자 : Lazinism / cafe.naver.com/Lazinism
+## SavedVariables: ErrorData
+## Dependencies: EQL3
+## Version: |cffffffffVer. 1.0.0
+## X-Website: Http://cafe.naver.com/Lazinism
+LaziInterface.lua
+LaziKoreanQuest.lua
+LaziKoreanQuest.xml
+KoreanQuestList.lua
+KoreanQuestData.lua
+
