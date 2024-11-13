@@ -10,7 +10,7 @@ Patch-Z.mqp를 다운 받아 터틀와우 설치 폴더의 /Data/ 아래에 추�
 pfQuest 폴더를 터틀와우 설치 폴더의 /interface/AddOns/ 아래에 추가.
 
 ## pfQuest-turtle
-**기계어 번역으로 되어 있어 수정 예정.**   
+**기계어 번역으로 되어 있어 수정 예정.**
 기준 버전 - 1.17.1   
 pfQuest-turtle 폴더를 터틀와우 설치 폴더의 /interface/AddOns/ 아래에 추가.
 
