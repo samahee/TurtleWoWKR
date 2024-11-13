@@ -1,0 +1,342 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	
+	<Frame name="LaziKoreanQuestControlFrame" >
+		<Scripts>
+			<OnLoad>
+					LaziKoreanQuestControlFrame_OnLoad()
+			</OnLoad>
+			<OnEvent>
+					LaziKoreanQuestControlFrame_OnEvent(event)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+	
+	<FontString name="LaziKoreanQuestTitleFont" font="Interface\Addons\LaziKoreanQuest\Fonts\K_Pagetext.TTF" virtual="true">
+		<FontHeight>
+			<AbsValue val="17"/>
+		</FontHeight>
+		<Color r="0" g="0" b="0"/>
+		<Shadow>
+			<Offset>
+				<AbsDimension x="1" y="-1"/>
+			</Offset>
+			<Color r="0.49" g="0.35" b="0.05"/>
+		</Shadow>
+	</FontString>
+	
+	<FontString name="LaziKoreanQuestFont" font="Interface\Addons\LaziKoreanQuest\Fonts\2002.ttf" spacing="5" virtual="true">
+			<FontHeight> 
+				<AbsValue val="13"/> 
+			</FontHeight> 
+			<Color r="0.18" g="0.09" b="0.01"/> 
+	</FontString>
+
+	<FontString name="LaziKoreanQuestIDFont" font="Interface\Addons\LaziKoreanQuest\Fonts\2002.ttf" virtual="true">
+			<FontHeight> 
+				<AbsValue val="11"/> 
+			</FontHeight> 
+			<Color r="0.5" g="0.0" b="0.01"/> 
+	</FontString> 	
+	
+	<FontString name="LaziKoreanGameFontBlack" font="Interface\Addons\LaziKoreanQuest\Fonts\2002.ttf" virtual="true">
+		<FontHeight>
+			<AbsValue val="13"/>
+		</FontHeight>
+		<Color r="0" g="0" b="0"/>
+	</FontString>
+	
+	<FontString name="LaziKoreanQuestFontNormalSmall" inherits="LaziKoreanGameFontBlack" virtual="true">
+		<Color r="0.18" g="0.12" b="0.06"/>
+	</FontString>
+	
+	<Frame name="LaziKoreanQuestLogFrame">
+		<Size>
+			<AbsDimension x="300" y="413"/>
+		</Size>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<FontString name="LaziKoreanQuestLogQuestTitle" inherits="LaziKoreanQuestTitleFont" justifyH="LEFT" text="TEST 타이틀입니다.">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="5" y="-10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjectivesText" inherits="LaziKoreanQuestFont" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogQuestTitle" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-5"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogTimerText" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjectivesText" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective1" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogTimerText" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective2" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective1" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective3" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective2" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective4" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective3" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective5" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective4" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective6" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective5" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective7" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective6" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective8" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective7" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective9" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective8" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogObjective10" inherits="LaziKoreanQuestFontNormalSmall" justifyH="LEFT" hidden="true">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective9" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogRequiredMoneyText" inherits="LaziKoreanQuestFontNormalSmall" text="KQ_REQUIRED_MONEY">
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogDescriptionTitle" inherits="LaziKoreanQuestTitleFont" justifyH="LEFT" text="KQ_QUEST_DESCRIPTION">
+					<Size>
+						<AbsDimension x="280" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogObjective10" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestLogQuestDescription" inherits="LaziKoreanQuestFont" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestLogDescriptionTitle" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-5"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="LaziKoreanQuestLogRequiredMoneyFrame" inherits="MoneyFrameTemplate">
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="LaziKoreanQuestLogRequiredMoneyText" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="10" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						SmallMoneyFrame_OnLoad();
+						MoneyFrame_SetType("STATIC");
+					</OnLoad>
+				</Scripts>
+			</Frame>
+		</Frames>
+	</Frame>
+	
+	<Frame name="LaziKoreanQuestLogQuestID">
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="LaziKoreanQuestLogQuestIDText" inherits="GameFontNormalSmall" justifyH="LEFT" >
+					<Size>
+						<AbsDimension x="195" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="RIGHT" relativeTo="EQL3_QuestLogQuestCount" relativePoint="RIGHT">
+							<Offset>
+								<AbsDimension x="-5" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+	</Frame>
+			
+	<Frame name="LaziKoreanQuestDetailFrame">
+		<Size>
+			<AbsDimension x="300" y="334"/>
+		</Size>
+		<Layers>
+			<Layer>
+				<FontString name="LaziKoreanQuestTitleText" inherits="LaziKoreanQuestTitleFont" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="5" y="-10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestDescription" inherits="LaziKoreanQuestFont" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestTitleText" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-5"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestObjectiveTitleText" inherits="LaziKoreanQuestTitleFont" text="KQ_QUEST_OBJECTIVES"  justifyH="LEFT">
+					<Size>
+						<AbsDimension x="285" y="18"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestDescription" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-15"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="LaziKoreanQuestObjectiveText" inherits="LaziKoreanQuestFont" justifyH="LEFT">
+					<Size>
+						<AbsDimension x="285" y="0"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="LaziKoreanQuestObjectiveTitleText" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-5"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+	</Frame>
+	
+</Ui>
