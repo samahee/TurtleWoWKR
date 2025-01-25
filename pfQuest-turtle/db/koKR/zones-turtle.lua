@@ -1,4 +1,4 @@
-pfDB["zones"]["enUS-turtle"] = {
+pfDB["zones"]["koKR-turtle"] = {
   [65] = "_",
   [296] = "South Seas",
   [409] = "Lapidis Isle",
