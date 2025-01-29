@@ -19,11 +19,11 @@ Patch-Z.mqp를 다운 받아 터틀와우 설치 폴더의 /Data/ 아래에 추�
 
 ## Addon
 한글화와 관련된 애드온만 작성됨.
-### Cartographer
+> ### Cartographer
 클라이언트 적용 버전 - 1.17.2
-### EQL3
+> ### EQL3
 퀘스트 확장 보기 및 설정
-### LaziKoreanQuest
+> ### LaziKoreanQuest
 * EQL3가 반드시 필요함.
 * 퀘스트 한글 번역 기능 제공.
   -  퀘스트 제목이 터틀와우에서 영어로 보내줘야 한글로 표시됨
@@ -31,31 +31,25 @@ Patch-Z.mqp를 다운 받아 터틀와우 설치 폴더의 /Data/ 아래에 추�
 * 클라이언트 적용 버전 - 바닐라, 1.17.2   
 * LaziKoreanQuest 폴더를 터틀와우 설치 폴더/interface/AddOns/ 에 추가.
 
-### pfQuest
+> ### pfQuest
 * Quest Tracker이며, 한글 번역 기능 제공.(단, 퀘스트 제목이 정확하게 와야됨)
 * 퀘스트 페이지에서 **Translate**를 클릭해서 **Korean** 선택.
 * 클라이언트 적용 버전 - 바닐라(와우 오리지널 1.12.1 버전 적용)
 * pfQuest 폴더를 터틀와우 설치 폴더/interface/AddOns/ 에 추가.
 
-### pfQuest-turtle
+> ### pfQuest-turtle
 * **터틀 와우 전용 퀘스트 한글화**
 * 터틀 와우 클라이언트 적용 버전 - 1.17.2
 * 터틀와우 전용 퀘스트 제목은 영어로 고정.
 * 번역 내용이 이해안되면 issue에 작성 후 수정 예정.
 * pfQuest-turtle 폴더를 터틀와우 설치 폴더/interface/AddOns/ 에 추가.
 
-
-
-### Aux-Addon
-경매장에서 최저가 검색해서 구매할 수 있게 해주고, Alt+마우스 왼쪽 클릭하면 자동으로 물건 올라감
-1.12.1에서 사용할 수 있는 Auctionator을 한글화한 파일.
-클래식에서 사용하는 Auctionator을 생각하면 낭패.
 ## 기타 데이터 파일 수정 및 변경
-### GunSilencer_v1.0.zip
+> ### GunSilencer_v1.0.zip
 * 총 소리를 소음총 소리로 바꿔주는 파일.
 * 압축 풀어서 터틀와우 설치 폴더의 /Data/ 아래에 추가.
 
-### WoW.exe 패치
+> ### WoW.exe 패치
 * 와이드 스크린 FoV 적용, **루팅 시 쉬프트 키 안눌러도 모든 아이템 가방에 들어가는 패치**.
 * [vanilla-tweaks](https://github.com/brndd/vanilla-tweaks/releases/download/v1.6.0/vanilla-tweaks_v1.6.0_x86_64-pc-windows-gnu.zip) 다운로드
 * 와우 폴더의 Wow.exe와 같은 위치에서 압축 해재.
