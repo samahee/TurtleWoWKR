@@ -176,17 +176,10 @@ BabbleZone:RegisterTranslations("enUS", function()
 
 		-- Turtle WoW
 		["Amani'alor"] = true,
-		["Amani'Alor"] = true,
 		["Tel'Abim"] = true,
 		["Alah'thalas"] = true,
-        ["Alah'Thalas"] = true,
-        ["Blackstone Island"] = true,
-        ["Thalassian Highlands"] = true,
 		["Lapidis Isle"] = true,
 		["Gillijim's Isle"] = true,
-        ["Gilneas"] = true,
-		["GM Island"] = true,
-		["Icepoint Rock"] = true,
 		["Scarlet Enclave"] = true,
 	}
 end)
@@ -944,8 +937,6 @@ end)
 
 BabbleZone:RegisterTranslations("koKR", function()
 	return {
-		["Eastern Kingdoms"] = "동부 왕국",
-		["Kalimdor"] = "칼림도어",
 		["Ahn'Qiraj"] = "안퀴라즈",
 		["Alterac Mountains"] = "알터랙 산맥",
 		["Alterac Valley"] = "알터랙 계곡",
@@ -992,7 +983,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Hall of Legends"] = "용사의 전당",
 		["Hillsbrad Foothills"] = "힐스브래드 구릉지",
 		["The Hinterlands"] = "동부 내륙지",
-		["Hyjal"] = "하이잘 산",
+		["Hyjal"] = "하이잘",
 		["Ironforge"] = "아이언포지",
 		["Loch Modan"] = "모단 호수",
 		["Lower Blackrock Spire"] = "검은바위 첨탑 하층",
@@ -1010,7 +1001,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Razorfen Kraul"] = "가시덩쿨 우리",
 		["Redridge Mountains"] = "붉은마루 산맥",
 		["Ruins of Ahn'Qiraj"] = "안퀴라즈 폐허",
-		["Scarlet Monastery"] = "붉은십자군 수도원",
+		["Scarlet Monastery"] = "붉은 십자군 수도원",
 		["Scholomance"] = "스칼로맨스",
 		["Searing Gorge"] = "이글거리는 협곡",
 		["Shadowfang Keep"] = "그림자 송곳니 성채",
@@ -1092,19 +1083,11 @@ BabbleZone:RegisterTranslations("koKR", function()
 
 		-- Turtle WoW
 		["Amani'alor"] = "아마니알로르",
-		["Amani'Alor"] = "아마니알로르",
 		["Tel'Abim"] = "텔아빔",
 		["Alah'thalas"] = "알라탈라스",
-        	["Alah'Thalas"] = "알라탈라스",
-        	["Blackstone Island"] = "검은바위 섬",
-		["Icepoint Rock"] = "얼음 바위섬",
-        	["Thalassian Highlands"] = "탈라시안 고원",
 		["Lapidis Isle"] = "라피디스의 섬",
 		["Gillijim's Isle"] = "길리짐의 섬",
-        	["Gilneas"] = "길니아스",
-		["GM Island"] = "GM의 안식처",
 		["Scarlet Enclave"] = "붉은십자군 초소",
-
 	}
 end)
 
