@@ -28,6 +28,7 @@ Data, AddOns 폴더로 구분.
 
 ### sound.mpq, speech.mpq
 * NPC의 목소리 한국어 변경.
+* 설치는 Data 폴더에 추가.
 * [다운로드 받으러 가기](http://naver.me/5KbRjehg)
 
 
