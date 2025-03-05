@@ -40,7 +40,7 @@ Data, AddOns 폴더로 구분.
 ### GunSilencer_v1.0.zip
 * 총 소리를 소음총 소리로 바꿔주는 파일.
 
-### sound.mpq, speech.mpq
+### sound.mpq, speech.mpq, sound.zip
 * NPC의 목소리 한국어 변경.
 * 설치는 Data 폴더에 추가.
 * [다운로드 받으러 가기](http://naver.me/5KbRjehg)
