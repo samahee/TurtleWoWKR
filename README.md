@@ -49,6 +49,11 @@ Data, AddOns 폴더로 구분.
 ## Addon
 한글화와 관련된 애드온만 작성됨.
 
+### Atlas, AtlasLoot, AtlasQuest
+* 터틀와우 용도로 한글화
+* 던전, 제작, PVP 아이템 리스트 및 던전 지도 확인
+* 던전에 맞는 퀘스트 확인 가능
+
 ### Cartographer
 * 가보지 않은 곳도 지도 볼수 있게 해줌
 * 그외 기타 여러가지 기능
