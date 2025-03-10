@@ -1221,7 +1221,7 @@ Dependencies: AceLibrary, AceLocale-2.2
 	["Booty Bay"] = "무법항";
 	["Burning Steppes"] = "불타는 평원";
 	["The Crescent Grove"] = "초승달 숲"; -- TurtleWOW
-	["Darkshore"] = "어둠해안";
+	["Darkshore"] = "어둠의 해안";
 	["Darnassus"] = "다르나서스";
 	["The Deadmines"] = "죽음의 폐광";
 	["Deadwind Pass"] = "죽음의 고개";
