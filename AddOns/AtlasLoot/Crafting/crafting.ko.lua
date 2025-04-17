@@ -1216,10 +1216,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s21161", "inv_hammer_unique_sulfuras", "=q4=설퍼론 망치", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 			{ "s54009", "inv_chest_plate16", "=q4=불타는 사슬 흉갑", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 			{ "s57196", "INV_Misc_Buckle_08", "=q3=피의 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
-			{ "s57181", "INV_Misc_Buckle_07", "=q3=꿈의 강철 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
-			{ "s45471", "INV_Boots_01", "=q4=꿈의 강철 장화", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
-			{ "s45469", "INV_Bracer_03", "=q4=꿈의 강철 팔보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
-			{ "s45467", "INV_Pants_03", "=q4=꿈의 강철 다리보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s57181", "INV_Misc_Buckle_07", "=q3=꿈강철 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s45471", "INV_Boots_01", "=q4=꿈강철 장화", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s45469", "INV_Bracer_03", "=q4=꿈강철 팔보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s45467", "INV_Pants_03", "=q4=꿈강철 다리보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 		};
 	
 		Armorsmith1 = {
@@ -1395,7 +1395,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s16649", "inv_bracer_19", "=q2=황제의 판금 팔보호구", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
 			{ "s20874", "inv_bracer_07", "=q4=검은무쇠 팔보호구", "=ds=#sr# =so1=295 =so2=315 =so3=325 =so4=335" },
 			{ "s28244", "inv_bracer_07", "=q4=얼음막이 팔보호구", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-			{ "s45469", "INV_Bracer_03", "=q4=꿈의 강철 팔보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s45469", "INV_Bracer_03", "=q4=꿈강철 팔보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 		},
 		SmithingGloves1 = {
 			{ "s3323", "inv_gauntlets_04", "=q2=구리 룬문자 건틀릿", "=ds=#sr# =so1=40 =so2=80 =so3=100 =so4=120" },
@@ -1458,7 +1458,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s24140", "inv_pants_plate_21", "=q3=검은영혼의 다리보호구", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 			{ "s47022", "inv_pants_04", "=q3=룬이 새겨진 다리보호구", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 			{ "s16744", "inv_pants_04", "=q3=마력 깃든 토륨 다리보호구", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-			{ "s45467", "INV_Pants_03", "=q4=꿈의 강철 다리보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s45467", "INV_Pants_03", "=q4=꿈강철 다리보호구", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 			{ "s20876", "inv_pants_04", "=q4=검은무쇠 다리보호구", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 			{ "s27829", "inv_pants_04", "=q4=티탄의 다리보호구", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		},
@@ -1480,7 +1480,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s16665", "inv_boots_plate_01", "=q2=룬문자 판금 장화", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 			{ "s23629", "inv_boots_chain_10", "=q3=튼튼한 나무구렁 장화", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 			{ "s47021", "inv_boots_plate_05", "=q3=룬이 새겨진 경갑", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-			{ "s45471", "INV_Boots_01", "=q4=꿈의 강철 장화", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s45471", "INV_Boots_01", "=q4=꿈강철 장화", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 			{ "s24399", "inv_boots_chain_08", "=q4=검은무쇠 장화", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		},
 		SmithingAxes1 = {
@@ -1587,7 +1587,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s57175", "INV_Misc_Buckle_05", "=q2=토륨 허리 죔쇠", "=ds=#sr# =so1=240 =so2=265 =so3=277 =so4=290" },
 			{ "s57178", "INV_Misc_Buckle_06", "=q2=아케나이트 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 			{ "s57196", "INV_Misc_Buckle_08", "=q3=피의 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
-			{ "s57181", "INV_Misc_Buckle_07", "=q3=꿈의 강철 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
+			{ "s57181", "INV_Misc_Buckle_07", "=q3=꿈강철 허리 죔쇠", "=ds=#sr# =so1=300 =so2=325 =so3=337 =so4=350" },
 		},
 		SmithingMisc1 = {
 			{ "s2660", "inv_stone_sharpeningstone_01", "=q1=조잡한 숫돌", "=ds=#sr# =so1=1 =so2=15 =so3=35 =so4=55" },
@@ -2533,11 +2533,11 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		TailoringArtisan5 = {
 			{ "s54011", "inv_boots_05", "=q4=화염핵 장화", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 			{ "s45485", "inv_gauntlets_25", "=q4=미스터리 풀림 장갑", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
-			{ "s45459", "inv_pants_14", "=q4=꿈의 실 킬트", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
-			{ "s45461", "inv_bracer_06", "=q4=꿈의 실 팔보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
-			{ "s45463", "inv_gauntlets_23", "=q4=꿈의 실 장갑", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
-			{ "s45457", "INV_Shoulder_05", "=q4=꿈의 실 어깨보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
-			{ "s45453", "INV_Misc_Herb_18", "=q2=꿈의 실", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300"},
+			{ "s45459", "inv_pants_14", "=q4=꿈실 킬트", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45461", "inv_bracer_06", "=q4=꿈실 팔보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45463", "inv_gauntlets_23", "=q4=꿈실 장갑", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45457", "INV_Shoulder_05", "=q4=꿈실 어깨보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45453", "INV_Misc_Herb_18", "=q2=꿈실", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300"},
 		};
 		TailoringHelm1 = {
 			{ "s8760", "inv_helmet_29", "=q2=감청색 비단 두건", "=ds=#sr# =so1=145 =so2=155 =so3=160 =so4=165" },
@@ -2572,7 +2572,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s18448", "inv_shoulder_02", "=q3=달빛매듭 어깨보호구", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s28482", "inv_shoulder_18", "=q3=숲의 어깨보호구", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s20848", "inv_shoulder_23", "=q4=화염핵 어깨보호대", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
-			{ "s45457", "INV_Shoulder_05", "=q4=꿈의 실 어깨보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45457", "INV_Shoulder_05", "=q4=꿈실 어깨보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 		},
 		TailoringCloak1 = {
 			{ "s2387", "inv_misc_cape_14", "=q1=리넨 망토", "=ds=#sr# =so1=1 =so2=35 =so3=47 =so4=60" },
@@ -2647,7 +2647,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s3841", "inv_bracer_12", "=q1=녹색 리넨 팔보호구", "=ds=#sr# =so1=60 =so2=85 =so3=102 =so4=120" },
 			{ "s22759", "inv_bracer_09", "=q4=화염핵 손목띠", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s28209", "inv_bracer_07", "=q4=빙하의 손목보호대", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
-			{ "s45461", "inv_bracer_06", "=q4=꿈의 실 팔보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45461", "inv_bracer_06", "=q4=꿈실 팔보호구", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 		},
 		TailoringGloves1 = {
 			{ "s3840", "inv_gauntlets_05", "=q1=질긴 리넨 장갑", "=ds=#sr# =so1=35 =so2=60 =so3=77 =so4=95" },
@@ -2679,7 +2679,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s28205", "inv_gauntlets_06", "=q4=빙하의 장갑", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s18454", "inv_gauntlets_06", "=q4=주문 전문화 장갑", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s45485", "inv_gauntlets_25", "=q4=미스터리 풀림 장갑", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
-			{ "s45463", "inv_gauntlets_23", "=q4=꿈의 실 장갑", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45463", "inv_gauntlets_23", "=q4=꿈실 장갑", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 		},
 		TailoringBelt1 = {
 			{ "s8776", "inv_belt_05", "=q1=리넨 허리띠", "=ds=#sr# =so1=15 =so2=50 =so3=67 =so4=85" },
@@ -2723,7 +2723,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s24092", "inv_pants_cloth_14", "=q3=붉은덩굴 다리보호구", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s24901", "inv_pants_cloth_05", "=q3=저승의 룬매듭 다리보호구", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 			{ "s23667", "inv_pants_06", "=q4=화염핵 다리보호구", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
-			{ "s45459", "inv_pants_14", "=q4=꿈의 실 킬트", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+			{ "s45459", "inv_pants_14", "=q4=꿈실 킬트", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 		},
 		TailoringBoots1 = {
 			{ "s12045", "inv_boots_05", "=q1=수수한 리넨 장화", "=ds=#sr# =so1=20 =so2=50 =so3=67 =so4=85" },
@@ -2807,7 +2807,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s3865", "inv_fabric_mageweave_03", "=q1=마법 두루마리", "=ds=#sr# =so1=175 =so2=180 =so3=182 =so4=185" },
 			{ "s18401", "inv_fabric_purplefire_02", "=q1=룬무늬 두루마리", "=ds=#sr# =so1=250 =so2=255 =so3=257 =so4=260" },
 			{ "s18560", "inv_fabric_moonrag_01", "=q1=달빛 옷감", "=ds=#sr# =so1=250 =so2=290 =so3=305 =so4=320" },
-			{ "s45453", "INV_Misc_Herb_18", "=q2=꿈의 실", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300"},
+			{ "s45453", "INV_Misc_Herb_18", "=q2=꿈실", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300"},
 		},
 	
 	-----------------
@@ -3250,7 +3250,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 			{ "s16153", "inv_ingot_07", "=q1=토륨 제련", "=ds=#sr# =so1=250 =so2=250 =so3=250 =so4=250" },
 			{ 0, "", "", "" },
 			{ "s22967", "inv_ingot_thorium", "=q5=엘레멘티움 제련", "=ds=#sr# =so1=300 =so2=350 =so3=362 =so4=375" },
-			{ "s45451", "INV_Ingot_DreamSteel", "=q5=꿈의 강철 제련", "=ds=#sr# =so1=300 =so2=350 =so3=362 =so4=375" },
+			{ "s45451", "INV_Ingot_DreamSteel", "=q5=꿈강철 제련", "=ds=#sr# =so1=300 =so2=350 =so3=362 =so4=375" },
 		};
 	
 	-------------
