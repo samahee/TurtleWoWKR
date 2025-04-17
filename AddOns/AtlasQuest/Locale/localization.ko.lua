@@ -285,9 +285,9 @@ Inst1Quest8name1 = "Grayson’s Hat"
 Inst1Quest9 = "(TW)9. The Harvest Golem Mystery" -- 40478
 Inst1Quest9_Level = "19"
 Inst1Quest9_Attain = "15"
-Inst1Quest9_Aim = "서부 몰락지대에 있는 죽음의 폐광으로 들어가 길니드를 처치하고, 가트사이드 농장에 있는 말티모르 가트사이드에게 돌아가세요."
+Inst1Quest9_Aim = "서부 몰락지대에 있는 죽음의 폐광으로 들어가 걸작 수확자(Masterpiece Harvester)를 처치하고, 가트사이드 농장에 있는 말티모르 가트사이드에게 돌아가세요."
 Inst1Quest9_Location = "말티모르 가트사이드 (서부 몰락지대 - 황금해안 채석장에서 북쪽 "..YELLOW.."31.3,37.6"..WHITE..")"
-Inst1Quest9_Note = "이 퀘스트 라인은 크리스토퍼 히웬에게서 시작됩니다 (서부 몰락지대 - 감시의 언덕 여관 "..YELLOW.."52.3,52.8"..WHITE..").\n길니드는 "..YELLOW.."[5]"..WHITE.."에 있습니다."
+Inst1Quest9_Note = "이 퀘스트 라인은 크리스토퍼 히웬에게서 시작됩니다 (서부 몰락지대 - 감시의 언덕 여관 "..YELLOW.."52.3,52.8"..WHITE..").\n걸작 수확자(Masterpiece Harvester)는 "..YELLOW.."[6]"..WHITE.."에 있습니다."
 Inst1Quest9_Prequest = "The Harvest Golem Mystery VIII" -- 40477
 Inst1Quest9_Folgequest = "The Harvest Golem Mystery X" --40479
 --
