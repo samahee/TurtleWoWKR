@@ -99,6 +99,7 @@ AtlasLoot_TableNames["BWLChromaggus"][1] = "BWLChromaggus";
 AtlasLoot_TableNames["BWLNefarian"][1] = "BWLNefarian";
 AtlasLoot_TableNames["BWLTrashMobs"][1] = "BWLTrashMobs";
 	--The Deadmines
+AtlasLoot_TableNames["DMJaredVoss"][1] = "DMJaredVoss";
 AtlasLoot_TableNames["DMMarisaduPaige"][1] = "DMMarisaduPaige";
 AtlasLoot_TableNames["DMBrainwashedNoble"][1] = "DMBrainwashedNoble";
 AtlasLoot_TableNames["DMForemanThistlenettle"][1] = "DMForemanThistlenettle";
@@ -107,6 +108,7 @@ AtlasLoot_TableNames["DMMinerJohnson"][1] = "DMMinerJohnson";
 AtlasLoot_TableNames["DMSneed"][1] = "DMSneed";
 AtlasLoot_TableNames["DMSneedsShredder"][1] = "DMSneedsShredder";
 AtlasLoot_TableNames["DMGilnid"][1] = "DMGilnid";
+AtlasLoot_TableNames["DMHarvester"][1] = "DMHarvester";
 AtlasLoot_TableNames["DMDefiasGunpowder"][1] = "DMDefiasGunpowder";
 AtlasLoot_TableNames["DMMrSmite"][1] = "DMMrSmite";
 AtlasLoot_TableNames["DMCookie"][1] = "DMCookie";
@@ -253,6 +255,7 @@ AtlasLoot_TableNames["AQ20ClassBooks"][1] = "AQ20ClassBooks";
 AtlasLoot_TableNames["AQ20Enchants"][1] = "AQ20Enchants";
 	--Scarlet Monestery - Armory
 AtlasLoot_TableNames["SMHerod"][1] = "SMHerod";
+AtlasLoot_TableNames["SMQuartermaster"][1] = "SMQuartermaster";
 AtlasLoot_TableNames["SMATrash"][1] = "SMATrash";
 	--Scarlet Monestery - Cathedral
 AtlasLoot_TableNames["SMFairbanks"][1] = "SMFairbanks";
@@ -261,6 +264,7 @@ AtlasLoot_TableNames["SMWhitemane"][1] = "SMWhitemane";
 AtlasLoot_TableNames["SMCTrash"][1] = "SMCTrash";
 	--Scarlet Monestery - Graveyard
 AtlasLoot_TableNames["SMVishas"][1] = "SMVishas";
+AtlasLoot_TableNames["SMDukeDreadmoore"][1] = "SMDukeDreadmoore";
 AtlasLoot_TableNames["SMScorn"][1] = "SMScorn";
 AtlasLoot_TableNames["SMIronspine"][1] = "SMIronspine";
 AtlasLoot_TableNames["SMAzshir"][1] = "SMAzshir";
@@ -269,6 +273,7 @@ AtlasLoot_TableNames["SMBloodmageThalnos"][1] = "SMBloodmageThalnos";
 AtlasLoot_TableNames["SMGTrash"][1] = "SMGTrash";
 	--Scarlet Monestery - Library
 AtlasLoot_TableNames["SMHoundmasterLoksey"][1] = "SMHoundmasterLoksey";
+AtlasLoot_TableNames["SMBrotherWystan"][1] = "SMBrotherWystan";
 AtlasLoot_TableNames["SMDoan"][1] = "SMDoan";
 AtlasLoot_TableNames["SMDoansBox"][1] = "SMDoansBox";
 AtlasLoot_TableNames["SMLTrash"][1] = "SMLTrash";
@@ -306,6 +311,7 @@ AtlasLoot_TableNames["SFKArugalsVoidwalker"][1] = "SFKArugalsVoidwalker";
 AtlasLoot_TableNames["SFKWolfMasterNandos"][1] = "SFKWolfMasterNandos";
 AtlasLoot_TableNames["SFKArchmageArugal"][1] = "SFKArchmageArugal";
 AtlasLoot_TableNames["SFKDeathswornCaptain"][1] = "SFKDeathswornCaptain";
+AtlasLoot_TableNames["SFKPrelate"][1] = "SFKPrelate";
 AtlasLoot_TableNames["SFKTrash"][1] = "SFKTrash";
 	--The Stockade
 AtlasLoot_TableNames["SWStTargorr"][1] = "SWStTargorr";
@@ -450,12 +456,14 @@ AtlasLoot_TableNames["WCBoahn"][1] = "WCBoahn";
 AtlasLoot_TableNames["WCLordCobrahn"][1] = "WCLordCobrahn";
 AtlasLoot_TableNames["WCLadyAnacondra"][1] = "WCLadyAnacondra";
 AtlasLoot_TableNames["WCKresh"][1] = "WCKresh";
+AtlasLoot_TableNames["WCDeviateFaerieDragon"][1] = "WCDeviateFaerieDragon";
+AtlasLoot_TableNames["WCZandara"][1] = "WCZandara";
 AtlasLoot_TableNames["WCLordPythas"][1] = "WCLordPythas";
 AtlasLoot_TableNames["WCSkum"][1] = "WCSkum";
+AtlasLoot_TableNames["WCVangros"][1] = "WCVangros";
 AtlasLoot_TableNames["WCLordSerpentis"][1] = "WCLordSerpentis";
 AtlasLoot_TableNames["WCVerdan"][1] = "WCVerdan";
 AtlasLoot_TableNames["WCMutanus"][1] = "WCMutanus";
-AtlasLoot_TableNames["WCDeviateFaerieDragon"][1] = "WCDeviateFaerieDragon";
 AtlasLoot_TableNames["WCTrash"][1] = "WCTrash";
 	--Zul'Farrak
 AtlasLoot_TableNames["ZFAntusul"][1] = "ZFAntusul";
@@ -505,6 +513,17 @@ AtlasLoot_TableNames["LKHLordBlackwaldII"][1] = "LKHLordBlackwaldII";
 AtlasLoot_TableNames["LKHMoroes"][1] = "LKHMoroes";
 AtlasLoot_TableNames["LKHTrash"][1] = "LKHTrash";
 AtlasLoot_TableNames["LKHEnchants"][1] = "LKHEnchants";
+    -- Upper Karazhan Halls
+AtlasLoot_TableNames["UKHGnarlmoon"][1] = "UKHGnarlmoon";
+AtlasLoot_TableNames["UKHIncantagos"][1] = "UKHIncantagos";
+AtlasLoot_TableNames["UKHAnomalus"][1] = "UKHAnomalus";
+AtlasLoot_TableNames["UKHEcho"][1] = "UKHEcho";
+AtlasLoot_TableNames["UKHKing"][1] = "UKHKing";
+AtlasLoot_TableNames["UKHSanvTasdal"][1] = "UKHSanvTasdal";
+AtlasLoot_TableNames["UKHKruul"][1] = "UKHKruul";
+AtlasLoot_TableNames["UKHRupturan"][1] = "UKHRupturan";
+AtlasLoot_TableNames["UKHMephistroth"][1] = "UKHMephistroth";
+AtlasLoot_TableNames["UKHTrash"][1] = "UKHTrash";
 	------------
 	--- Sets ---
 	------------
@@ -528,19 +547,11 @@ AtlasLoot_TableNames["HakkariBlades"][1] = "HakkariBlades";
 AtlasLoot_TableNames["PrimalBlessing"][1] = "PrimalBlessing";
 AtlasLoot_TableNames["ScourgeInvasion"][1] = "ScourgeInvasion";
 AtlasLoot_TableNames["Legendaries"][1] = "Legendaries";
-AtlasLoot_TableNames["Artifacts"][1] = "Artifacts";
 AtlasLoot_TableNames["RareMounts"][1] = "RareMounts";
-AtlasLoot_TableNames["OldMounts"][1] = "OldMounts";
 AtlasLoot_TableNames["PvPMountsSets"][1] = "PvPMountsSets";
-AtlasLoot_TableNames["UnobMounts"][1] = "UnobMounts";
 AtlasLoot_TableNames["Tabards"][1] = "Tabards";
 AtlasLoot_TableNames["RarePets1"][1] = "RarePets1";
 AtlasLoot_TableNames["RarePets2"][1] = "RarePets2";
-	--Turtle Wow
-AtlasLoot_TableNames["DonationRewards1"][1] = "DonationRewards1";
-AtlasLoot_TableNames["DonationRewards2"][1] = "DonationRewards2";
-AtlasLoot_TableNames["DonationRewards3"][1] = "DonationRewards3";
-AtlasLoot_TableNames["DonationRewards4"][1] = "DonationRewards4";
 	--Crafted Sets - Blacksmithing
 AtlasLoot_TableNames["SteelPlate"][1] = "SteelPlate";
 AtlasLoot_TableNames["ImperialPlate"][1] = "ImperialPlate";

@@ -80,6 +80,7 @@ Atlas_DropDownLayouts = {
 			"HateforgeQuarry", -- TurtleWOW
 			"KarazhanCrypt", -- TurtleWOW
 			"LowerKara", -- -- TurtleWOW 1.17.0
+            "UpperKara",
 			"MoltenCore",
 			"Naxxramas",
 			"Scholomance",
@@ -206,6 +207,7 @@ Atlas_DropDownLayouts = {
 			"Naxxramas",
 			"OnyxiasLair",
 			"TheTempleofAhnQiraj",
+            "UpperKara",
 		},
 		[ATLAS_DDL_WORLDBOSSES] = {
 			"Azuregos",
@@ -288,6 +290,7 @@ Atlas_DropDownLayouts = {
 			"BlackwingLair",
 			"EmeraldSanctum", -- TurtleWOW 1.17.0
 			"LowerKara", -- -- TurtleWOW 1.17.0
+            "UpperKara",
 			"MoltenCore",
 			"Naxxramas",
 			"OnyxiasLair",
