@@ -1378,4 +1378,16 @@ Dependencies: AceLibrary, AceLocale-2.2
 	["Zul'Aman"] = "줄아만";
 	["Moo"] = "Moo",
 	["Cla'ckora"] = "Cla'ckora",
+    -- Kara40
+    ["Tower of Karazhan"] = "카라잔의 탑",
+    ["Keeper Gnarlmoon"] = "Keeper Gnarlmoon",
+    ["Ley-Watcher Incantagos"] = "Ley-Watcher Incantagos",
+    ["Anomalus"] = "Anomalus",
+    ["Echo of Medivh"] = "Echo of Medivh",
+    ["King"] = "King",
+    ["Sanv Tas'dal"] = "Sanv Tas'dal",
+    ["Rupturan the Broken"] = "Rupturan the Broken",
+    ["Kruul"] = "Kruul",
+    ["Mephistroth"] = "Mephistroth",
+	
 } end)

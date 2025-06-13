@@ -1367,4 +1367,15 @@ Dependencies: AceLibrary, AceLocale-2.2
 	["Zul'Aman"] = true;
 	["Moo"] = true,
 	["Cla'ckora"] = true,
+    -- Kara40
+    ["Tower of Karazhan"] = true,
+    ["Keeper Gnarlmoon"] = true,
+    ["Ley-Watcher Incantagos"] = true,
+    ["Anomalus"] = true,
+    ["Echo of Medivh"] = true,
+    ["King"] = true,
+    ["Sanv Tas'dal"] = true,
+    ["Rupturan the Broken"] = true,
+    ["Kruul"] = true,
+    ["Mephistroth"] = true,
 } end)

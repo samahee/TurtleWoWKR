@@ -525,15 +525,15 @@ AtlasLootBossButtons = {
 		"SFKBookofUr";
 		"SFKWolfMasterNandos";
 		"SFKArchmageArugal";
+		"SFKPrelate";
 		"";
-		"";--SFKPrelate
 		"SFKTrash";
 	};
 	SMArmory = {
 		"VanillaKeys";
 		"";
 		"SMHerod";
-		"";--SMQuartermaster
+		"SMQuartermaster";
 		"";
 		"SMATrash";
 		"SCARLET";
@@ -557,7 +557,7 @@ AtlasLootBossButtons = {
 		"SMIronspine";
 		"SMAzshir";
 		"SMFallenChampion";
-		"";--SMDukeDreadmoore
+		"SMDukeDreadmoore";
 		"";
 		"SMGTrash";
 		"SCARLET";
@@ -567,7 +567,7 @@ AtlasLootBossButtons = {
 		"SMHoundmasterLoksey";
 		"SMDoan";
 		"SMDoansBox";
-		"";--SMBrotherWystan
+		"SMBrotherWystan";
 		"";
 		"SMLTrash";
 		"SCARLET";
@@ -681,14 +681,14 @@ AtlasLootBossButtons = {
 	TheDeadmines = {
 		"";
 		"";
-		"";--DMJaredVoss
+		"DMJaredVoss";
 		"DMRhahkZor";
 		"DMMinerJohnson";
 		"DMSneed";		
 		"DMSneedsShredder";
 		"DMGilnid";
 		--"DMDefiasGunpowder";
-		"";--DMHarvester
+		"DMHarvester";
 		"DMMrSmite";
 		"DMCookie";
 		"DMCaptainGreenskin";
@@ -855,10 +855,10 @@ AtlasLootBossButtons = {
 		"WCLadyAnacondra";
 		"WCKresh";
 		"WCDeviateFaerieDragon";
-		"";--WCZandara
+		"WCZandara";
 		"WCLordPythas";
 		"WCSkum";
-		"";--WCVangros
+		"WCVangros";
 		"WCLordSerpentis";
 		"WCVerdan";
 		"WCMutanus";
@@ -958,6 +958,20 @@ AtlasLootBossButtons = {
 		"LKHTrash";
 		"LKHEnchants";
 	};
+    UpperKara = {
+        "";
+		"";
+		"UKHGnarlmoon";
+		"UKHIncantagos";
+		"UKHAnomalus";
+		"UKHEcho";
+		"UKHKing";
+		"UKHSanvTasdal";
+		"UKHRupturan";
+		"UKHKruul";
+		"UKHMephistroth";
+		"UKHTrash";
+    };
 	EmeraldSanctum = {
 		"ESErennius";
 		"ESSolnius1";
@@ -3512,19 +3526,19 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 21275, "INV_Staff_20", "=q4=Blessed Qiraji Augur Staff", "=q1=#m4# =ds=#w9#" },
 	};
 	AQ40Ouro = {
-		{ 21615, "INV_Helmet_51", "=q4=Don Rigoberto's Lost Hat", "=ds=#s1#, #a1#", "13%" },
-		{ 21611, "INV_Bracer_13", "=q4=Burrower Bracers", "=ds=#s8#, #a1#", "13%" },
-		{ 23558, "INV_Shield_23","=q4=The Burrower's Shell", "=ds=#s14#", "13%" },
-		{ 23570, "INV_Misc_EngGizmos_19", "=q4=Jom Gabbar", "=ds=#s14#", "13%" },
-		{ 21610, "INV_Shield_24", "=q4=Wormscale Blocker", "=ds=#w8#", "13%" },
-		{ 23557, "INV_Weapon_Rifle_10", "=q4=Larvae of the Great Worm", "=ds=#w5#", "13%" },
-		{ 21613, "INV_Boots_04", "=q4=Wormhide Boots", "=ds=#s12#, #a2#", "13%" },
-		{ 21612, "INV_Boots_Chain_08", "=q4=Wormscale Stompers", "=ds=#s12#, #a3#", "13%" },
+		{ 21615, "INV_Helmet_51", "=q4=Don Rigoberto's Lost Hat", "=ds=#s1#, #a1#", "17%" },
+		{ 21611, "INV_Bracer_13", "=q4=Burrower Bracers", "=ds=#s8#, #a1#", "17%" },
+		{ 23558, "INV_Shield_23","=q4=The Burrower's Shell", "=ds=#s14#", "17%" },
+		{ 23570, "INV_Misc_EngGizmos_19", "=q4=Jom Gabbar", "=ds=#s14#", "17%" },
+		{ 21610, "INV_Shield_24", "=q4=Wormscale Blocker", "=ds=#w8#", "17%" },
+		{ 23557, "INV_Weapon_Rifle_10", "=q4=Larvae of the Great Worm", "=ds=#w5#", "17%" },
+		{ 21613, "INV_Boots_04", "=q4=Wormhide Boots", "=ds=#s12#, #a2#", "17%" },
+		{ 21612, "INV_Boots_Chain_08", "=q4=Wormscale Stompers", "=ds=#s12#, #a3#", "17%" },
 		{ 0,"","","" },
-		{ 21614, "INV_Helmet_09", "=q4=Wormhide Protector", "=ds=#s1#, #a2#" },
-		{ 55554, "INV_Gauntlets_26", "=q4=Carapace Handguards", "=ds=#s9#, #a3#" },
-		{ 55553, "inv_gauntlets_23", "=q4=Gloves of the Primordial Burrower", "=ds=#s9#, #a2#" },
-		{ 55555, "INV_Hammer_25", "=q4=Ivonor, Maiden's Mallet", "=ds=#h1#, #w6#" },
+		{ 21614, "INV_Helmet_09", "=q4=Wormhide Protector", "=ds=#s1#, #a2#", "17%" },
+		{ 55554, "INV_Gauntlets_26", "=q4=Carapace Handguards", "=ds=#s9#, #a3#", "17%" },
+		{ 55553, "inv_gauntlets_23", "=q4=Gloves of the Primordial Burrower", "=ds=#s9#, #a2#", "17%" },
+		{ 55555, "INV_Hammer_25", "=q4=Ivonor, Maiden's Mallet", "=ds=#h1#, #w6#", "17%" },
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 21237, "INV_Staff_20", "=q4=Imperial Qiraji Regalia", "=ds=#m3# ", "4%" },
@@ -3917,14 +3931,11 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{	 0, "", "", "" },
 		{ 80710, "INV_SHOULDER_18", "=q2=Turtle Scale Shoulderguards", "=ds=#s3#, #a3#", "33%" },
 	};
-	-- WCZandara = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	WCZandara = {
+		{ 55371, "INV_Belt_08", "=q2=Windborne Sash", "=ds=#s10#, #a1#", "50%" },
+		{ 55369, "INV_Gauntlets_24", "=q3=Kolkar Marauder Gauntlets", "=ds=#s9#, #a3#", "25%" },
+		{ 55370, "INV_Wand_08", "=q3=Totem of Static Charge", "=ds=#s16#, #e17# =q15=#c7#", "25%" },
+	};
 	WCLordPythas = {
 		{ 6472, "INV_Wand_10", "=q3=Stinging Viper", "=ds=#h1#, #w6#", "33%" },
 		{ 6473, "INV_Shirt_16", "=q2=Armor of the Fang", "=ds=#s5#, #a2#", "33%" },
@@ -3937,14 +3948,11 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 80712, "INV_PANTS_08", "=q3=Charged Leggings", "=ds=#s11#, #a1#", "33%" },
 	};
-	-- WCVangros = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	WCVangros = {
+		{ 55374, "INV_Belt_24", "=q2=Enraging Waistwraps", "=ds=#s10#, #a2#", "50%" },
+		{ 55372, "INV_Misc_Bone_05", "=q3=Band of the Claw", "=ds=#s13#", "25%" },
+		{ 55373, "INV_Gauntlets_07", "=q3=Idol of the Apex Predator", "=ds=#s16#, #e16# =q13=#c1#", "25%" },
+	};
 	WCLordSerpentis = {
 		{ 6469, "INV_Weapon_Bow_10", "=q3=Venomstrike", "=ds=#w2#", "25%" },
 		{ 5970, "INV_Gauntlets_19", "=q2=Serpent Gloves", "=ds=#s9#, #a1#", "25%" },
@@ -4518,19 +4526,16 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60572, "INV_Shoulder_23", "=q3=Incendosaur Skin Pauldrons", "=ds=#s3#, #a2#, From Elites Outside Dungeon", "0.1%" },
 		{ 60612, "INV_Helmet_47", "=q3=Mixologist Goggles", "=ds=#s1#, #a2#", "0.0025%" },
 	};
-	-- DMJaredVoss = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	DMJaredVoss = {
+		{ 55377, "INV_Misc_Cape_09", "=q2=Chemist's Shawl", "=ds=#s4#", "50%" },
+		{ 55375, "INV_Drink_06", "=q3=Corrosive Vial", "=ds=#s14#", "25%" },
+		{ 55376, "INV_Weapon_ShortBlade_02", "=q3=Mixologist", "=ds=#h1#, #w4#", "25%" },
+	};
 	DMRhahkZor = {
 		{ 872, "INV_ThrowingAxe_01", "=q2=Rockslicer", "=ds=#h2#, #w1#", "5%" },
 		{ 5187, "INV_Hammer_09", "=q1=Rhahk'Zor's Hammer", "=ds=#h2#, #w6#", "95%" },
-		{ 0, "", "", "" },
 		{ 80706, "INV_Gauntlets_04", "=q2=Ogremight Gauntlets", "=ds=#s9#, #a3#", "50%" },
+		{ 9496, "INV_Misc_Cape_12", "=q2=Defias Mage Drape", "=ds=#lvl1#" },
 	};
 	DMMinerJohnson = {
 		{ 5443, "INV_Shield_02", "=q3=Gold-plated Buckler", "=ds=#w8#", "35%" },
@@ -4539,8 +4544,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	DMSneed = {
 		{ 5194, "INV_ThrowingAxe_06", "=q3=Taskmaster Axe", "=ds=#h2#, #w1#", "35%" },
 		{ 5195, "INV_Gauntlets_23", "=q2=Gold-flecked Gloves", "=ds=#s9#, #a1#", "65%" },
-		{ 0, "", "", "" },
 		{ 80707, "INV_Boots_03", "=q2=Operator Boots", "=ds=#s12#, #a2#", "60%" },
+		{ 50256, "INV_Sword_06", "=q2=Fractured Sword", "=ds=#lvl1#" },
 	};
 	DMSneedsShredder = {
 		{ 1937, "INV_Sword_24", "=q2=Buzz Saw", "=ds=#h1#, #w10#", "10%" },
@@ -4553,14 +4558,11 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	DMDefiasGunpowder = {
 		{ 5397, "INV_Misc_Ammo_Gunpowder_01", "=q1=Defias Gunpowder", "=ds=#m8#", "100%" },
 	};
-	-- DMHarvester = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	DMHarvester = {
+		{ 55380, "INV_Pants_06", "=q2=Craftsman's Pants", "=ds=#s11#, #a2#", "50%" },
+		{ 55378, "INV_Gauntlets_27", "=q3=Inventor's Mitts", "=ds=#s9#, #a1#", "25%" },
+		{ 55379, "INV_Weapon_Rifle_03", "=q3=Slag Slugger", "=ds=#w5#", "25%" },
+	};
 	DMMrSmite = {
 		{ 7230, "INV_Hammer_09", "=q3=Smite's Mighty Hammer", "=ds=#h2#, #w6#", "20%" },
 		{ 5192, "INV_Sword_24", "=q2=Thief's Blade", "=ds=#h1#, #w10#", "30%" },
@@ -4577,8 +4579,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 5202, "INV_Shirt_08", "=q3=Corsair's Overshirt", "=ds=#s5#, #a1#", "30%" },
 		{ 10399, "INV_Chest_Leather_08", "=q3=Blackened Defias Armor", "=ds=#s5#, #a2#", "20%" },
 		{ 5191, "INV_Sword_24", "=q3=Cruel Barb", "=ds=#h1#, #w10#", "20%" },
-		{ 0, "", "", "" },
 		{ 81005, "INV_Shoulder_11", "=q3=Spiked Defias Spaulders", "=ds=#s3#, #a3#", "8%" },
+		{ 29980, "INV_Jewelry_Ring_22", "=q2=Broken Stonemason's Guild Signet", "=ds=#lvl1#" },
 		{ 0, "", "", "" },
 		{ 2874, "INV_Letter_15", "=q1=An Unsent Letter", "=ds=#m2#" },
 		{ 0, "", "", "" },
@@ -4587,10 +4589,10 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	DMCookie = {
 		{ 5198, "INV_Staff_02", "=q3=Cookie's Stirring Rod", "=ds=#w12#", "35%" },
 		{ 5197, "INV_Fabric_Silk_02", "=q2=Cookie's Tenderizer", "=ds=#h1#, #w6#", "65%" },
+		{ 80708, "INV_Chest_Cloth_04", "=q2=Cookie's Apron", "=ds=#s5#, #a1#", "60%" },
+		{ 9338, "INV_Misc_Eye_01", "=q2=Murloc Eye on a String", "=ds=#lvl1#" },
 		{ 0, "", "", "" },
 		{ 8490, "INV_Box_PetCarrier_01", "=q1=Cat Carrier (Siamese)", "=ds=#e15#", "15%" },
-		{ 0, "", "", "" },
-		{ 80708, "INV_Chest_Cloth_04", "=q2=Cookie's Apron", "=ds=#s5#, #a1#", "60%" },
 	};
 	DMTrash = {
 		{ 8492, "Spell_Nature_ForceOfNature", "=q1=Parrot Cage (Green Wing Macaw)", "=ds=#e15# =q7=#x40#", "4%" },
@@ -5091,14 +5093,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "INV_Box_01", "=q6=#cb1#", "" },
 		{ 7146, "INV_Misc_Key_01", "=q2=The Scarlet Key", "=ds=#e14#" },
 	};
-	-- SMBrotherWystan = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	SMBrotherWystan = {
+		{ 55470, "INV_Misc_Book_08", "=q3=Libram of Radiance", "=ds=#s16#, #e18# =q16=#c4#", "25%" },
+		{ 55471, "spell_holy_fistofjustice", "=q3=Wystan's Steel Fist", "=ds=#h1#, #w13#", "25%" },
+		{ 55473, "INV_Jewelry_Necklace_02", "=q3=Pendant of Scarlet Rage", "=ds=#s2#", "25%" },
+		{ 55472, "INV_Pants_06", "=q3=Swiftstrike Kilt", "=ds=#s11#, #a2#", "25%" },
+	};
 	SMHerod = {
 		{ 7719, "INV_Helmet_25", "=q3=Raging Berserker's Helm", "=ds=#s1#, #a3#", "25%" },
 		{ 7718, "INV_Shoulder_01", "=q3=Herod's Shoulder", "=ds=#s3#, #a3#", "25%" },
@@ -5107,14 +5107,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "1%" },
 	};
-	-- SMQuartermaster = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	SMQuartermaster = {
+		{ 55475, "INV_Bracer_09", "=q3=Cuffs of Evocation", "=ds=#s8#, #a1#", "25%" },
+		{ 55477, "INV_Jewelry_Ring_13", "=q3=Loop of Focused Magic", "=ds=#s13#", "25%" },
+		{ 55476, "INV_Boots_05", "=q3=Treads of Renewal", "=ds=#s12#, #a1#", "25%" },
+		{ 55474, "INV_ThrowingKnife_02", "=q3=Balanced Razor Shivs", "=ds=#w11#", "25%" },
+	};
 	SMFairbanks = {
 		{ 19507, "INV_Shoulder_27", "=q2=Inquisitor's Shawl", "=ds=#s3#, #a1#", "33%" },
 		{ 19508, "INV_Bracer_11", "=q2=Branded Leather Bracers", "=ds=#s8#, #a2#", "33%" },
@@ -5146,14 +5144,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "1%" },
 	};
-	-- SMDukeDreadmoore = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	SMDukeDreadmoore = {
+		{ 55386, "INV_Belt_26", "=q3=Harbinger Girdle", "=ds=#s10#, #a3#", "25%" },
+		{ 55387, "INV_Misc_Book_05", "=q3=Introduction to the Dark Arts", "=ds=#s14#", "25%" },
+		{ 55388, "INV_Jewelry_Ring_27", "=q3=Slain Sentry's Ring", "=ds=#s13#", "25%" },
+		{ 55389, "INV_Boots_05", "=q3=Ghoulskin Treads", "=ds=#s12#, #a2#", "25%" },
+	};
 	SMIronspine = {
 		{ 7688, "INV_Chest_Plate15", "=q3=Ironspine's Ribcage", "=ds=#s5#, #a3#", "33%" },
 		{ 7687, "INV_Hammer_19", "=q3=Ironspine's Fist", "=ds=#h1#, #w6#", "33%" },
@@ -5675,23 +5671,30 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 14149, "INV_Misc_Cape_18", "=q2=Subterranean Cape", "=ds=#s4#", "33.33%" },
 		{ 14148, "INV_Bracer_13", "=q2=Crystalline Cuffs", "=ds=#s8#, #a1#", "33.33%" },
 		{ 14145, "INV_Weapon_ShortBlade_12", "=q2=Cursed Felblade", "=ds=#h3#, #w10#", "33.33%" },
+		{ 64,    "INV_Helmet_48", "=q2=Fiery Cloak", "=ds=#lvl1#" },
 	};
 	RFCOggleflint = {
 		{ 80700, "INV_MISC_BONE_01", "=q2=Tribal Trogg Club", "=ds=#h3#, #w6#", "35%" },
 		{ 80701, "INV_PANTS_02", "=q2=Dusty Leather Pants", "=ds=#s11#, #a2#", "35%" },
 		{ 80702, "INV_SHIRT_05", "=q2=Stitched Cloth Vest", "=ds=#s5#, #a1#", "30%" },
+		{ 17041, "INV_Mace_01", "=q2=The Blazing Pan Cloth Vest", "=ds=#lvl1#" },
 	};
 	RFCJergosh = {
 		{ 14150, "INV_Chest_Cloth_24", "=q2=Robe of Evocation", "=ds=#s5#, #a1#", "33.33%" },
 		{ 14147, "INV_Bracer_07", "=q2=Cavedweller Bracers", "=ds=#s8#, #a3#", "33.33%" },
 		{ 14151, "INV_Weapon_ShortBlade_25", "=q2=Chanting Blade", "=ds=#h1#, #w4#", "33.33%" },
+		{ 80111, "INV_Shirt_07", "=q2=Ash-Covered Tunic", "=ds=#lvl1#" },
 	};
 	RFCBazzalan = {
 		{ 80705, "INV_SPEAR_08", "=q2=Satyr Poker", "=ds=#h2#, #w7#", "30%" },
 		{ 80704, "INV_CHEST_CHAIN", "=q2=Lavadrenched Chainmail", "=ds=#s5#, #a3#", "30%" },
 		{ 80703, "INV_BELT_24", "=q2=Heated Leather Belt", "=ds=#s10#, #a2#", "30%" },
+		{ 5235,  "INV_Staff_02", "=q2=Cultist's Firestick", "=ds=#lvl1#" },
 		{ 0, "", "", "" },
-		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "1%" },
+        { 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "1%" },
+		{ 0, "", "", "" },
+        { 0, "INV_Box_01", "=q6=Searing Blade Warlock (Trash)", "" },
+        { 12862, "INV_Misc_Book_09", "=q2=Burning Blade Grimoire", "=ds=#lvl1#" },
 	};
 	SFKRethilgore = {
 		{ 5254, "INV_Shoulder_08", "=q1=Rugged Spaulders", "=ds=#s3#, #a2#", "100%" },
@@ -5737,14 +5740,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 6340, "INV_Misc_Pelt_Wolf_02", "=q2=Fenrus' Hide", "=ds=#s4#", "50%" },
 		{ 3230, "INV_Bracer_07", "=q2=Black Wolf Bracers", "=ds=#s8#, #a2#", "50%" },
 	};
-	-- SFKPrelate = {
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- 	{ 0, "", "", "" },
-	-- };
+	SFKPrelate = {
+		{ 55382, "inv_helmet_53", "=q3=Mitre of the First Light", "=ds=#s1#, #a1#", "25%" },
+		{ 55383, "Spell_Holy_GreaterBlessingofSalvation", "=q3=Prelate's Sigil", "=ds=#s15#", "25%" },
+		{ 55384, "INV_Sword_25", "=q3=Hilt of Radiance", "=ds=#h1#, #w10#", "25%" },
+		{ 55385, "INV_Jewelry_Ring_22", "=q3=Signet of Faded Sermons", "=ds=#s13#", "25%" },
+	};
 	SFKArugalsVoidwalker = {
 		{ 5943, "INV_Bracer_03", "=q2=Rift Bracers", "=ds=#s8#, #a3#", "3%" },
 	};
@@ -6297,8 +6298,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 18779,"INV_Misc_Note_06","=q3=Bottom Half of Advanced Armorsmithing: Volume I","=ds=#m8#", "1" },
 		{ 12727, "INV_Scroll_05", "=q3=Plans: Enchanted Thorium Breastplate", "=q1=#m4# =ds=#p2# #m14#" },
 		{ 12618, "INV_Chest_Plate10", "=q3=Enchanted Thorium Breastplate", "=ds=#s5#, #a4#" },
-		{ 0, "", "", "" },
-		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#cb10#", "" },
 		{ 12806, "INV_Chest_Plate04", "=q3=Unforged Rune Covered Breastplate", "=ds=#m8#" },
 		{ 12696, "INV_Scroll_03", "=q3=Plans: Demon Forged Breastplate", "=q1=#m4#, =ds=#p2# #m20#" },
@@ -6320,7 +6319,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12940,"INV_Sword_43","=q3=Dal'Rend's Sacred Charge","=ds=#h3#, #w10#", "8%" },
 		{ 12939,"INV_Sword_40","=q3=Dal'Rend's Tribal Guardian","=ds=#h4#, #w10#", "8%" },
 		{ 12583,"INV_Weapon_Halberd_04","=q3=Blackhand Doomsaw","=ds=#w7# ", "8%" },
-		{ 0, "", "", "" },
         { 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	UBRSGyth = {
@@ -6573,11 +6571,11 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	};
 	STRATSothosJarien = {
 		{ 0, "INV_Misc_Bag_09", "=q6=#j3#", "=q5=Sothos & Jarien" },
-		{ 22327, "INV_Jewelry_Necklace_08", "=q3=Amulet of the Redeemed", "=ds=#s2#", "33%" },
-		{ 22301, "INV_Chest_Cloth_48", "=q3=Ironweave Robe", "=ds=#s5#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "33%" },
-		{ 22328, "INV_Pants_04", "=q3=Legplates of Vigilance", "=ds=#s11#, #a4#", "33%" },
-		{ 22334, "INV_Jewelry_Ring_05", "=q3=Band of Mending", "=ds=#s13#", "33%" },
-		{ 22329, "INV_Wand_07", "=q3=Scepter of Interminable Focus", "=ds=#s15#", "33%" },
+		{ 22327, "INV_Jewelry_Necklace_08", "=q3=Amulet of the Redeemed", "=ds=#s2#", "20%" },
+		{ 22301, "INV_Chest_Cloth_48", "=q3=Ironweave Robe", "=ds=#s5#, #a1# =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "20%" },
+		{ 22328, "INV_Pants_04", "=q3=Legplates of Vigilance", "=ds=#s11#, #a4#", "20%" },
+		{ 22334, "INV_Jewelry_Ring_05", "=q3=Band of Mending", "=ds=#s13#", "20%" },
+		{ 22329, "INV_Wand_07", "=q3=Scepter of Interminable Focus", "=ds=#s15#", "20%" },
 	};
 	STRATStonespine = {
 		{ 13397, "INV_Misc_Cape_19", "=q3=Stoneskin Gargoyle Cape", "=ds=#s4#", "33%" },
@@ -7923,7 +7921,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61281, "inv_boots_cloth_09", "=q4=Shadeweave Boots", "=ds=#s12#, #a1#", "20%" },
 		{ 61273, "INV_Belt_26", "=q4=Earthbreaker Belt", "=ds=#s10#, #a3#", "20%" },
 		{ 61249, "INV_Misc_Pelt_Bear_Ruin_03", "=q4=Pelt of the Great Howler", "=ds=#s4#", "20%" },
-		{ 61293, "INV_QirajIdol_Night", "=q4=Idol of the Moonfang", "=ds=#s16#, #e16#", "20%" },
+		{ 61293, "INV_QirajIdol_Night", "=q4=Idol of the Moonfang", "=ds=#s16#, #e16# =q13=#c1#", "20%" },
 		{ 61248, "INV_Weapon_Rifle_TWoW_02_Gray", "=q4=Beasthunter's Blunderbuss", "=ds=#w5#", "20%" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
@@ -7958,7 +7956,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61247, "INV_Sword_2H_Blood_C_02", "=q4=Shadowbringer", "=ds=#h2#, #w10#", "20%" },
 		{ 61443, "INV_Misc_Book_13", "=q4=Libram of the Faithful", "=ds=#s16#, #e18#", "20%" },
 		{ 0, "", "", "" },
-		{ 61184, "Inv_weapon_shortblade_23", "=q5=The Scythe of Elune", "=ds=#m2#", "0.85%" },
+		{ 61184, "Inv_weapon_shortblade_23", "=q5=The Scythe of Elune", "=ds=#m2#", "2%" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 61739, "INV_Misc_Note_01", "=q3=Formula: Enchant Boots - Vampirism", "=ds=#p4# #m14#", "1.3%" },
@@ -8006,7 +8004,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61453, "inv_sword_draenei_05", "=q4=Anasterian's Legacy", "=ds=#h1#, #w10#", "10%" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
-		{ 61231, "", "=q1=Key to the Upper Chambers", "=ds=#m3#", "100%" },
+		{ 61231, "INV_Misc_Key_09", "=q1=Key to the Upper Chambers", "=ds=#m3#", "100%" },
 		{ 0, "", "", "" },
 		{ 61180, "INV_Misc_Note_01", "=q3=Formula: Enchant Cloak - Greater Arcane Resistance", "=ds=#p4# #m14#", "1.2%" },
 		{ 70001, "INV_Misc_Note_01", "=q3=Formula: Enchant Gloves - Arcane Power", "=ds=#p4# #m14#", "2%" },
@@ -8077,7 +8075,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61238, "INV_Shield_23", "=q4=Scaleshield of Emerald Flight", "=ds=#w8#", "17%" },
 		{ 61448, "INV_Weapon_Halberd_05", "=q4=Axe of Dormant Slumber", "=ds=#h1#, #w1#", "17%" },
 		{ 61208, "INV_Staff_49", "=q4=Staff of the Dreamer", "=ds=#h2#, #w9#", "17%" },
-		{ 61455, "Spell_Nature_NatureTouchDecay", "=q4=Idol of the Emerald Rot", "=ds=#s16#, #e16#", "17%" },
+		{ 61455, "Spell_Nature_NatureTouchDecay", "=q4=Idol of the Emerald Rot", "=ds=#s16#, #e16# =q13=#c1#", "17%" },
 		{ 61203, "INV_Relics_LibramofGrace", "=q4=Libram of the Dreamguard", "=ds=#s16#, #e18#", "17%" },
 		{ 61204, "Spell_Nature_StoneSkinTotem", "=q4=Totem of the Stonebreaker", "=ds=#s16#, #e17#", "17%" },
 		{ 61215, "inv_misc_head_dragon_green", "=q4=Head of Solnius", "=ds=#m2#", "100%", "", "", "", "", "", "", "", "", "", "", {
@@ -8125,7 +8123,318 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 20381, "INV_Misc_MonsterScales_11", "=q2=Dreamscale", "", "5%" },
 		{ 61197, "INV_Stone_05", "=q3=Fading Dream Fragment", "", "0.35%" },
 		{ 0, "", "", "" },
-		{ 54001, "INV_Crate_02", "=q2=Dream Frog", "=ds=#e15#", "0.08%" },
-		
+		{ 54001, "INV_Crate_02", "=q3=Dream Frog", "=ds=#e15#", "0.08%" },
+	};
+    UKHGnarlmoon = {
+		{ 55078, "INV_Jewelry_Talisman_Mana", "=q4=Ley-attuned Choker", "=ds=#s2#", "25%" },
+		{ 55084, "INV_Misc_Cape_10", "=q4=Torn Wings of Midnight", "=ds=#s4#", "25%" },
+		{ 55081, "INV_Boots_05", "=q4=Manadrenched Feather Slippers", "=ds=#s12#, #a1#", "25%" },
+		{ 55285, "INV_Gauntlets_05", "=q4=Crite's Holy Hands", "=ds=#s9#, #a1#", "25%" },
+		{ 0, "", "", "" },
+		{ 55079, "INV_Chest_Leather_04", "=q4=Ravenkeeper's Frenzied Embrace", "=ds=#s5#, #a2#", "25%" },
+		{ 55080, "INV_Bloodmoon", "=q4=Bloodmoon, Sickle of the Murderous Flight", "=ds=#h1#, #w1#", "25%" },
+		{ 55082, "INV_QirajIdol_War", "=q4=Idol of Laceration", "=ds=#s16#, #e16# =q13=#c1#", "25%" },
+		{ 55083, "inv_helmet_24", "=q4=Crown of the Wildpack", "=ds=#s1#, #a3#", "25%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+	};
+	UKHIncantagos = {
+		{ 55086, "INV_Belt_22", "=q4=Magehunter Belt", "=ds=#s10#, #a3# ", "25%" },
+		{ 55099, "INV_Pants_Plate_18", "=q4=Leysteel Legplates", "=ds=#s11#, #a4#", "25%" },
+		{ 55089, "INV_Bracer_02", "=q4=Bands of the Surgebreaker", "=ds=#s8#, #a2#", "25%" },
+		{ 55507, "INV_Jewelry_Necklace_28", "=q4=Choker of Terminal Arcanum", "=ds=#s2#", "25%" },
+		{ 0, "", "", "" },
+		{ 55085, "INV_Pants_Cloth_13", "=q4=Magispark Leggings", "=ds=#s11#, #a1#", "25%" },
+		{ 55087, "INV_Misc_Gem_Variety_01", "=q4=Jewel of Wild Magics", "=ds=#s14#", "25%" },
+		{ 55090, "INV_Shield_23", "=q4=Scaleshield of Azure Flight", "=ds=#w8#", "25%" },
+		{ 55091, "INV_Jewelry_Ring_Saphire", "=q4=Loop of Infused Renewal", "=ds=#s13#  =q16=#c4#=ds=, =q9=#c5#=ds=, =q15=#c7#=ds=, =q13=#c1#", "25%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 41403, "INV_Enchant_ShardGlowingSmall", "=q4=Enchanted Amethyst", "=ds=#m3#", "100%" },
+		{ 55133, "INV_Weapon_ShortBlade_27", "=q4=Claw of the Mageweaver", "=q1=#m4# =ds=#h4#, #w13#" },
+		{ 55134, "Inv_Wand_05", "=q4=Rod of Permafrost", "=q1=#m4# =ds=#w12#" },
+		{ 55135, "Inv_misc_monsterscales_09", "=q4=Shard of Leyflow", "=q1=#m4# =ds=#s14#" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 41373, "INV_Misc_EngGizmos_08", "=q1=Draconic Focus", "=ds=#m3#", "100%", },
+	};
+	UKHAnomalus = {
+		{ 55092, "INV_Boots_Plate_06", "=q4=Manahide Slippers", "=ds=#s12#, #a2#", "25%" },
+		{ 55095, "INV_Misc_Cape_18", "=q4=Cloak of the Bloody Ravager", "=ds=#s4#", "25%" },
+		{ 55096, "INV_Weapon_Crossbow_18", "=q4=Phase-shifting Crossbow", "=ds=#w3#", "25%" },
+		{ 55279, "INV_Staff_22", "=q4=Branch of Resolute Defense", "=ds=#s15#", "25%" },
+		{ 0, "", "", "" },
+		{ 55093, "INV_Enchant_DustSoul", "=q4=Remains of Overwhelming Power", "=ds=#s14#", "25%" },
+		{ 55106, "INV_Bracer_10", "=q4=Bindings of Contained Magic", "=ds=#s8#, #a1#", "25%" },
+		{ 55097, "INV_Jewelry_Necklace_08", "=q4=Choker of Chromatic Power", "=ds=#s2#", "25%" },
+		{ 55098, "INV_Gauntlets_05", "=q4=Gloves of Nourishment", "=ds=#s9#, #a2#", "25%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 41412, "INV_Enchant_DustSoul", "=q1=Cosmic Residue", "=ds=#m3#", "100%", },
+	};
+	UKHEcho = {
+		{ 55108, "INV_DemonhornShoulders", "=q4=Dreadslayer Shoulderblades", "=ds=#s3#, #a4#", "25%" },
+		{ 55109, "INV_trickster_leggings", "=q4=Legwraps of Meticulous Planning", "=ds=#s11#, #a2#", "25%" },
+		{ 55276, "Inv_Mallet", "=q4=Forgotten Raven's Mallet", "=ds=#h1#, #w6#", "25%" },
+		{ 55110, "INV_Misc_Book_07", "=q4=Libram of the Eternal Tower", "=ds=#s16#, #e18# =q16=#c4#", "25%" },
+		{ 0, "", "", "" },
+		{ 55107, "INV_Gauntlets_05", "=q4=Gloves of Leyline Convergence", "=ds=#s9#, #a1#", "25%" },
+		{ 55111, "Spell_Shadow_SoulGem", "=q4=Eye of Dormant Corruption", "=ds=#s14#", "25%" },
+		{ 55112, "INV_Jewelry_Talisman_Health", "=q4=Pendant of Forgiven Mistakes", "=ds=#s2#", "25%" },
+		{ 55094, "INV_Jewelry_Ring_Jade", "=q4=Medivh's Hindsight", "=ds=#s13#", "25%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 41414, "INV_Enchant_EssenceMysticalSmall", "=q1=Anima of the Guardian", "=ds=#m3#", "100%", },
+	};
+	UKHKing = {
+		{ 55088, "INV_Gauntlets_05", "=q4=Dragonclaw Gauntlets", "=ds=#s9#, #a4#", "12.5%" },
+		{ 55100, "INV_Checkmate", "=q4=Checkmate", "=ds=#h2#, #w6#", "12.5%" },
+		{ 55101, "INV_Misc_Book_11", "=q4=King's Edict", "=ds=#s14#", "12.5%" },
+		{ 55103, "BTNLancelot_Ring", "=q4=Royal Seal of Greymane", "=ds=#s13#", "12.5%" },
+		{ 55102, "INV_Chest_Plate08", "=q4=Insomnius' Retribution", "=ds=#s5#, #a3#", "12.5%" },
+		{ 55104, "INV_Boots_Chain_05", "=q4=Pawn's Advance", "=ds=#s12#, #a2#", "12.5%" },
+		{ 55105, "INV_BishopHat", "=q4=Bishop's Reverence", "=ds=#s1#, #a1#", "12.5%" },
+		{ 55274, "INV_Misc_Cape_21", "=q4=Chain-Cloak of the Rookguard", "=ds=#s4#", "12.5%" },
+		{ 0, "", "", "" },
+        { 20739, "Ability_Mount_RidingHorse", "=q4=Mechanical Horse", "=ds=#e7#", "3%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 55483, "INV_Boots_Cloth_01", "=q4=Ethereal Boots of Conquest", "=q17=#c9#=ds=, =q9=#c5#=ds=, =q11=#c8#, =q13=#c1#", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47274, "=ds=#s12#, #a4#" }, }, -- war
+			{ { 47232, "=ds=#s12#, #a1#" }, { 47238, "=ds=#s12#, #a1#" }, }, -- priest
+			{ { 47310, "=ds=#s12#, #a1#" }, { 47316, "=ds=#s12#, #a1#" }, }, -- lock
+			{ { 47394, "=ds=#s12#, #a2#" }, { 47400, "=ds=#s12#, #a2#" }, { 47406, "=ds=#s3#, #a2#" } }, -- druid
+		},
+		},
+		{ 55484, "INV_Boots_Cloth_01", "=q4=Ethereal Boots of Ascendancy", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#, =q15=#c7#=ds=, =q10=#c3#=ds=", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47064, "=ds=#s12#, #a4#" }, { 47070, "=ds=#s12#, #a4#" }, { 47076, "=ds=#s12#, #a4#" }, }, -- paladin
+			{ { 47322, "=ds=#s12#, #a3#" }, }, -- hunter
+			{ { 47328, "=ds=#s12#, #a2#" }, }, -- rogue
+			{ { 47184, "=ds=#s12#, #a3#" }, { 47190, "=ds=#s12#, #a3#" }, { 47196, "=ds=#s12#, #a3#" } }, -- shaman
+			{ { 47112, "=ds=#s12#, #a1#" }, { 47118, "=ds=#s12#, #a1#" }, }, -- mage
+		},
+		},
+		{ 0, "", "", "" },
+		{ 55482, "INV_Jewelry_Necklace_29", "=q4=Ephemeral Pendant", "=ds=#s2#", "10%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47275, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47233, "=ds=#s3#, #a1#" }, { 47239, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47311, "=ds=#s3#, #a1#" }, { 47317, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47395, "=ds=#s3#, #a2#" }, { 47401, "=ds=#s3#, #a2#" }, { 47407, "=ds=#s3#, #a2#" } }, -- druid
+			{ { 47065, "=ds=#s12#, #a4#" }, { 47071, "=ds=#s12#, #a4#" }, { 47077, "=ds=#s12#, #a4#" }, }, -- paladin
+			{ { 47323, "=ds=#s12#, #a3#" }, }, -- hunter
+			{ { 47329, "=ds=#s12#, #a2#" }, }, -- rogue
+			{ { 47185, "=ds=#s12#, #a3#" }, { 47191, "=ds=#s12#, #a3#" }, { 47197, "=ds=#s12#, #a3#" } }, -- shaman
+			{ { 47113, "=ds=#s12#, #a1#" }, { 47119, "=ds=#s12#, #a1#" }, }, -- mage
+		},
+		},
+	};
+	UKHSanvTasdal = {
+		{ 55113, "INV_DemonhornHelmet", "=q4=Dreadslayer Horns", "=ds=#s1#, #a4#", "14.3%" },
+		{ 55114, "INV_QirajIdol_Sage", "=q4=Totem of Broken Earth", "=ds=#s16#, #e17# =q15=#c7#", "14.3%" },
+		{ 55115, "INV_Riftcarver", "=q4=Riftcarver's Implement", "=ds=#h1#, #w4#", "14.3%" },
+		{ 55116, "INV_DraeneiSpear", "=q4=Raka'shishi, Spear of the Adrift Hunt", "=ds=#h2#, #w7#", "14.3%" },
+		{ 55117, "INV_Belt_22", "=q4=Girdle of the Faded Primals", "=ds=#s10#, #a3#", "14.3%" },
+		{ 55118, "INV_Misc_Cape_06", "=q4=Kum'isha's Tattered Drape", "=ds=#s4#", "14.3%" },
+		{ 55119, "inv_helmet_24", "=q4=Forgotten Hide Helm", "=ds=#s1#, #a2#", "14.3%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 55485, "INV_Shoulder_17", "=q4=Shifting Mantle of Conquest", "=q17=#c9#=ds=, =q9=#c5#=ds=, =q11=#c8#, =q13=#c1#", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47271, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47229, "=ds=#s3#, #a1#" }, { 47235, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47307, "=ds=#s3#, #a1#" }, { 47313, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47391, "=ds=#s3#, #a2#" }, { 47397, "=ds=#s3#, #a2#" }, { 47403, "=ds=#s3#, #a2#" } }, -- druid
+		},
+		},
+		{ 55486, "INV_Shoulder_17", "=q4=Shifting Mantle of Ascendancy", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#, =q15=#c7#=ds=, =q10=#c3#=ds=", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47061, "=ds=#s3#, #a4#" }, { 47067, "=ds=#s3#, #a4#" }, { 47073, "=ds=#s3#, #a4#" }, }, -- paladin
+			{ { 47319, "=ds=#s3#, #a3#" }, }, -- hunter
+			{ { 47325, "=ds=#s3#, #a2#" }, }, -- rogue
+			{ { 47181, "=ds=#s3#, #a3#" }, { 47187, "=ds=#s3#, #a3#" }, { 47193, "=ds=#s3#, #a3#" } }, -- shaman
+			{ { 47109, "=ds=#s3#, #a1#" }, { 47115, "=ds=#s3#, #a1#" }, }, -- mage
+		},
+		},
+		{ 0, "", "", "" },
+		{ 55482, "INV_Jewelry_Necklace_29", "=q4=Ephemeral Pendant", "=ds=#s2#", "10%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47275, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47233, "=ds=#s3#, #a1#" }, { 47239, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47311, "=ds=#s3#, #a1#" }, { 47317, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47395, "=ds=#s3#, #a2#" }, { 47401, "=ds=#s3#, #a2#" }, { 47407, "=ds=#s3#, #a2#" } }, -- druid
+			{ { 47065, "=ds=#s12#, #a4#" }, { 47071, "=ds=#s12#, #a4#" }, { 47077, "=ds=#s12#, #a4#" }, }, -- paladin
+			{ { 47323, "=ds=#s12#, #a3#" }, }, -- hunter
+			{ { 47329, "=ds=#s12#, #a2#" }, }, -- rogue
+			{ { 47185, "=ds=#s12#, #a3#" }, { 47191, "=ds=#s12#, #a3#" }, { 47197, "=ds=#s12#, #a3#" } }, -- shaman
+			{ { 47113, "=ds=#s12#, #a1#" }, { 47119, "=ds=#s12#, #a1#" }, }, -- mage
+		},
+		},
+	};
+	UKHKruul = {
+		{ 55127, "Inv_Demonaxe", "=q4=Shar'tateth, the Shattered Edge", "=ds=#h2#, #w1#", "11.1%" },
+		{ 55129, "INV_Desecration", "=q4=Desecration", "=ds=#h3#, #w10#", "11.1%" },
+		{ 55128, "ability_thunderbolt", "=q4=Comet Signaller", "=ds=#h1#, #w6#", "11.1%" },
+		{ 55130, "inv_bracer_09", "=q4=Wristwraps of Exiled Radiance", "=ds=#s8#, #a1#", "11.1%" },
+		{ 55131, "INV_Misc_StoneTablet_02", "=q4=Shieldrender Talisman", "=ds=#s14#", "11.1%" },
+		{ 55132, "Spell_Shadow_LifeDrain", "=q4=Pendant of Purified Demon's Blood", "=ds=#s2#", "11.1%" },
+		{ 55506, "INV_Belt_27", "=q4=Worldbreaker Girdle", "=ds=#s10#, #a4#", "11.1%" },
+		{ 55510, "inv_stone_10", "=q4=Fragments of Aldrach", "=ds=#w11#", "11.1%" },
+		{ 55511, "Inv_Wand_06", "=q4=Hellflame", "=ds=#w12#", "11.1%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 55489, "INV_Pants_Plate_11", "=q4=Brutal Leggings of Conquest", "=q17=#c9#=ds=, =q9=#c5#=ds=, =q11=#c8#, =q13=#c1#", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47273, "=ds=#s11#, #a4#" }, }, -- war
+			{ { 47231, "=ds=#s11#, #a1#" }, { 47237, "=ds=#s11#, #a1#" }, }, -- priest
+			{ { 47309, "=ds=#s11#, #a1#" }, { 47315, "=ds=#s11#, #a1#" }, }, -- lock
+			{ { 47393, "=ds=#s11#, #a2#" }, { 47399, "=ds=#s11#, #a2#" }, { 47405, "=ds=#s11#, #a2#" } }, -- druid
+		},
+		},
+		{ 55490, "INV_Pants_Plate_11", "=q4=Brutal Leggings of Ascendancy", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#, =q15=#c7#=ds=, =q10=#c3#=ds=", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47063, "=ds=#s11#, #a4#" }, { 47069, "=ds=#s11#, #a4#" }, { 47075, "=ds=#s11#, #a4#" }, }, -- paladin
+			{ { 47321, "=ds=#s11#, #a3#" }, }, -- hunter
+			{ { 47327, "=ds=#s11#, #a2#" }, }, -- rogue
+			{ { 47183, "=ds=#s11#, #a3#" }, { 47189, "=ds=#s11#, #a3#" }, { 47195, "=ds=#s3#, #a3#" } }, -- shaman
+			{ { 47111, "=ds=#s11#, #a1#" }, { 47117, "=ds=#s11#, #a1#" }, }, -- mage
+		},
+		},
+		{ 0, "", "", "" },
+		{ 55482, "INV_Jewelry_Necklace_29", "=q4=Ephemeral Pendant", "=ds=#s2#", "10%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47275, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47233, "=ds=#s3#, #a1#" }, { 47239, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47311, "=ds=#s3#, #a1#" }, { 47317, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47395, "=ds=#s3#, #a2#" }, { 47401, "=ds=#s3#, #a2#" }, { 47407, "=ds=#s3#, #a2#" } }, -- druid
+			{ { 47065, "=ds=#s12#, #a4#" }, { 47071, "=ds=#s12#, #a4#" }, { 47077, "=ds=#s12#, #a4#" }, }, -- paladin
+			{ { 47323, "=ds=#s12#, #a3#" }, }, -- hunter
+			{ { 47329, "=ds=#s12#, #a2#" }, }, -- rogue
+			{ { 47185, "=ds=#s12#, #a3#" }, { 47191, "=ds=#s12#, #a3#" }, { 47197, "=ds=#s12#, #a3#" } }, -- shaman
+			{ { 47113, "=ds=#s12#, #a1#" }, { 47119, "=ds=#s12#, #a1#" }, }, -- mage
+		},
+		},
+	};
+	UKHRupturan = {
+		{ 55120, "INV_ElementalFist", "=q4=Al'Kazeth, Claw of Ruptured Elements", "=ds=#h1#, #w13#", "14.3%" },
+		{ 55121, "INV_Bulwark", "=q4=Bulwark of Enduring Earth", "=ds=#w8#", "14.3%" },
+		{ 55122, "INV_Pants_Mail_15", "=q4=Earthquake Leggings", "=ds=#s11#, #a3#", "14.3%" },
+		{ 55123, "INV_Jewelry_Ring_Bronze", "=q4=Loop of Hardened Slate", "=ds=#s13#", "14.3%" },
+		{ 55124, "INV_Misc_Gem_Diamond_02", "=q4=Pure Jewel of Draenor", "=ds=#s14#", "14.3%" },
+		{ 55125, "INV_Gauntlets_05", "=q4=Handwraps of Dead Winds", "=ds=#s9#, #a2#", "14.3%" },
+		{ 55126, "inv_shoulder_14", "=q4=Mantle of the Drifting Stars", "=ds=#s3#, #a2#", "14.3%" },
+		{ 0, "", "", "" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "3.25%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 55489, "INV_Helmet_57", "=q4=Fractured Crown of Conquest", "=q17=#c9#=ds=, =q9=#c5#=ds=, =q11=#c8#, =q13=#c1#", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47270, "=ds=#s11#, #a4#" }, }, -- war
+			{ { 47228, "=ds=#s11#, #a1#" }, { 47234, "=ds=#s11#, #a1#" }, }, -- priest
+			{ { 47306, "=ds=#s11#, #a1#" }, { 47312, "=ds=#s11#, #a1#" }, }, -- lock
+			{ { 47390, "=ds=#s11#, #a2#" }, { 47396, "=ds=#s11#, #a2#" }, { 47402, "=ds=#s11#, #a2#" } }, -- druid
+		},
+		},
+		{ 55490, "INV_Helmet_57", "=q4=Fractured Crown of Ascendancy", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#, =q15=#c7#=ds=, =q10=#c3#=ds=", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47060, "=ds=#s11#, #a4#" }, { 47066, "=ds=#s11#, #a4#" }, { 47072, "=ds=#s11#, #a4#" }, }, -- paladin
+			{ { 47318, "=ds=#s11#, #a3#" }, }, -- hunter
+			{ { 47324, "=ds=#s11#, #a2#" }, }, -- rogue
+			{ { 47180, "=ds=#s11#, #a3#" }, { 47186, "=ds=#s11#, #a3#" }, { 47192, "=ds=#s3#, #a3#" } }, -- shaman
+			{ { 47108, "=ds=#s11#, #a1#" }, { 47114, "=ds=#s11#, #a1#" }, }, -- mage
+		},
+		},
+		{ 0, "", "", "" },
+		{ 55482, "INV_Jewelry_Necklace_29", "=q4=Ephemeral Pendant", "=ds=#s2#", "10%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47275, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47233, "=ds=#s3#, #a1#" }, { 47239, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47311, "=ds=#s3#, #a1#" }, { 47317, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47395, "=ds=#s3#, #a2#" }, { 47401, "=ds=#s3#, #a2#" }, { 47407, "=ds=#s3#, #a2#" } }, -- druid
+			{ { 47065, "=ds=#s12#, #a4#" }, { 47071, "=ds=#s12#, #a4#" }, { 47077, "=ds=#s12#, #a4#" }, }, -- paladin
+			{ { 47323, "=ds=#s12#, #a3#" }, }, -- hunter
+			{ { 47329, "=ds=#s12#, #a2#" }, }, -- rogue
+			{ { 47185, "=ds=#s12#, #a3#" }, { 47191, "=ds=#s12#, #a3#" }, { 47197, "=ds=#s12#, #a3#" } }, -- shaman
+			{ { 47113, "=ds=#s12#, #a1#" }, { 47119, "=ds=#s12#, #a1#" }, }, -- mage
+		},
+		},
+	};
+	UKHMephistroth = {
+		{ 55351, "INV_Belt_22", "=q4=Turalyon's Hope", "=ds=#s10#, #a4#", "19%", },
+		{ 55353, "INV_Jewelry_Ring_Nightbreaker", "=q4=Mephistroth's Cunning", "=ds=#s13#", "19%", },
+		{ 55356, "INV_Bracer_18", "=q4=Netherwrought Bracers", "=ds=#s8#, #a4#", "19%", },
+		{ 55513, "INV_Chest_Chain_07", "=q4=Tunic of Demonic Deception", "=ds=#s5#, #a2#", "19%", },
+		{ 55357, "INV_Belt_26", "=q4=Sash of the Grand Betrayal", "=ds=#s10#, #a2#", "8%", },
+		{ 55346, "INV_Weapon_BoneBow2", "=q4=Rain of Spiders", "=ds=#w2#", "8%", },
+		{ 55347, "INV_Thunderfall", "=q4=Thunderfall, Stormhammer of the Chief Thane", "=ds=#h1#, #w6#", "8%", },
+		{ 0, "", "", "" },
+		{ 55348, "INV_Kirel", "=q4=Kirel'narak, the Death Sentence", "=ds=#w9#", "" },
+		{ 55512, "inv_shoulder_01", "=q4=Forgotten Hide Pauldrons", "=ds=#s3#, #a2#", "" },
+		{ 55349, "INV_Nethraka", "=q4=Nethraka, Wing of Oblivion", "=ds=#w8#", "" },
+		{ 55350, "Inv_Censer", "=q4=Censer of Soulwarding", "=ds=#s15#" },
+		{ 55352, "INV_Misc_Cape_20", "=q4=Cloak of Rapid Regeneration", "=ds=#s4#" },
+		{ 55354, "INV_Gauntlets_05", "=q4=Khadgar's Guidance", "=ds=#s9#, #a1#" },
+		{ 55355, "INV_Belt_03", "=q4=Memory of the Last Guardian", "=ds=#s10#, #a1#" },
+		{ 92082, "Spell_Shadow_SummonFelHunter", "=q4=Felforged Dreadhound", "=ds=#e7#", "5%" },
+		{ 41485, "INV_Misc_Gem_Diamond_01", "=q3=Pristine Ley Crystal", "=ds=#e12#", "100%" },
+		{ 0, "", "", "" },
+		{ 55579, "BTNHeartAmulet", "=q4=Heart of Mephistroth", "=ds=#m3#", "100%" },
+		{ 55515, "INV_Misc_Cape_17", "=q4=Felforged Nathrezan Veil", "=q1=#m4# =ds=#s4#" },
+		{ 55516, "BTNGoldMysticRing", "=q4=Felforged Nathrezan Circlet", "=q1=#m4# =ds=#s13#" },
+		{ 55517, "INV_Jewelry_Ring_Emerald", "=q4=Felforged Nathrezan Aureole", "=q1=#m4# =ds=#s13#" },
+		{ 0, "", "", "" },
+		{ 55491, "INV_Chest_Cloth_45", "=q4=Nathrezim Armor of Treachery", "=q17=#c9#=ds=, =q9=#c5#=ds=, =q11=#c8#, =q13=#c1#", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47272, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47230, "=ds=#s3#, #a1#" }, { 47236, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47308, "=ds=#s3#, #a1#" }, { 47314, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47392, "=ds=#s3#, #a2#" }, { 47398, "=ds=#s3#, #a2#" }, { 47404, "=ds=#s3#, #a2#" } }, -- druid
+		},
+		},
+		{ 55492, "INV_Shoulder_17", "=q4=Nathrezim Armor of Deceit", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q12=#c6#, =q15=#c7#=ds=, =q10=#c3#=ds=", "50%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47062, "=ds=#s3#, #a4#" }, { 47068, "=ds=#s3#, #a4#" }, { 47074, "=ds=#s3#, #a4#" }, }, -- paladin
+			{ { 47320, "=ds=#s3#, #a3#" }, }, -- hunter
+			{ { 47326, "=ds=#s3#, #a2#" }, }, -- rogue
+			{ { 47182, "=ds=#s3#, #a3#" }, { 47188, "=ds=#s3#, #a3#" }, { 47194, "=ds=#s3#, #a3#" } }, -- shaman
+			{ { 47110, "=ds=#s3#, #a1#" }, { 47116, "=ds=#s3#, #a1#" }, }, -- mage
+		},
+		},
+		{ 0, "", "", "" },
+		{ 55482, "INV_Jewelry_Necklace_29", "=q4=Ephemeral Pendant", "=ds=#s2#", "10%", "", "", "", "", "", "", "", "", "", "", {
+			{ { 47275, "=ds=#s3#, #a4#" }, }, -- war
+			{ { 47233, "=ds=#s3#, #a1#" }, { 47239, "=ds=#s3#, #a1#" }, }, -- priest
+			{ { 47311, "=ds=#s3#, #a1#" }, { 47317, "=ds=#s3#, #a1#" }, }, -- lock
+			{ { 47395, "=ds=#s3#, #a2#" }, { 47401, "=ds=#s3#, #a2#" }, { 47407, "=ds=#s3#, #a2#" } }, -- druid
+			{ { 47065, "=ds=#s12#, #a4#" }, { 47071, "=ds=#s12#, #a4#" }, { 47077, "=ds=#s12#, #a4#" }, }, -- paladin
+			{ { 47323, "=ds=#s12#, #a3#" }, }, -- hunter
+			{ { 47329, "=ds=#s12#, #a2#" }, }, -- rogue
+			{ { 47185, "=ds=#s12#, #a3#" }, { 47191, "=ds=#s12#, #a3#" }, { 47197, "=ds=#s12#, #a3#" } }, -- shaman
+			{ { 47113, "=ds=#s12#, #a1#" }, { 47119, "=ds=#s12#, #a1#" }, }, -- mage
+		},
+		},
+		{ 0, "", "", "" },
+		{ 41447, "INV_Misc_Gem_Pearl_06", "=q5=Soul of the Dreadlord", "=ds=#m3#" },
+	};
+	UKHTrash = {
+		{ 55275, "INV_Misc_Gem_Amethyst_03", "=q4=Slivers of Nullification", "=ds=#s14#", "0.25%" },
+		{ 55277, "INV_TheEnd", "=q4=The End of All Ambitions", "=ds=#h2#, #w10#", "0.25%" },
+		{ 55278, "INV_Gauntlets_05", "=q4=Ques' Gauntlets of Precision", "=ds=#s10#, #a4#", "0.25%" },
+		{ 55280, "INV_stormhowl_sabatons", "=q4=Boots of Elemental Fury", "=ds=#s12#, #a3#", "0.25%" },
+		{ 55281, "INV_Gauntlets_05", "=q4=Gauntlets of Elemental Fury", "=ds=#s9#, #a3#", "0.25%" },
+		{ 55282, "INV_lionheart_sabatons", "=q4=Boots of the Grand Crusader", "=ds=#s12#, #a4#", "0.25%" },
+		{ 55283, "INV_Gauntlets_05", "=q4=Gauntlets of the Grand Crusader", "=ds=#s9#, #a4#", "0.25%" },
+		{ 55284, "INV_Belt_08", "=q4=Dragunovi's Sash of Dominion", "=ds=#s10#, #a1#", "0.25%" },
+		{ 55286, "INV_Jewelry_Ring_33", "=q4=Ring of Holy Light", "=ds=#s13#", "0.25%" },
+		{ 55508, "INV_Jewelry_Necklace_27", "=q4=Brand of Karazhan", "=ds=#s13#", "0.25%" },
 	};
 };

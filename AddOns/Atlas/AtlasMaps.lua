@@ -269,6 +269,27 @@ AtlasMaps = {
 		{ GREY..INDENT..AL["Trash Mobs"] };
 		{ GREY..INDENT..AL["LKH Enchants"] };
 	};
+    UpperKara = {
+		ZoneName = { AL["Tower of Karazhan"], };
+		Acronym = "Kara40";
+		Location = { AL["Deadwind Pass"], 41};
+		LevelRange = "60";
+		MinLevel = "60";
+		PlayerLimit = "40";
+		Continent = AL["Eastern Kingdoms"];
+		{ BLUE.."A) "..AL["Entrance"] };
+		{ BLUE.."B) "..AL["Connection"] };
+		{ GREY.."1) "..AL["Keeper Gnarlmoon"], NPC, -1 };
+		{ GREY.."2) "..AL["Ley-Watcher Incantagos"], NPC, -1 };
+		{ GREY.."3) "..AL["Anomalus"], NPC, -1 };
+		{ GREY.."4) "..AL["Echo of Medivh"], NPC, -1 };
+		{ GREY.."5) "..AL["King"], NPC, -1 };
+		{ GREY.."6) "..AL["Sanv Tas'dal"], NPC, -1 };
+		{ GREY.."7) "..AL["Rupturan the Broken"], NPC, -1 };
+		{ GREY.."8) "..AL["Kruul"], NPC, -1 };
+		{ GREY.."9) "..AL["Mephistroth"], NPC, -1 };
+		{ GREY..INDENT..AL["Trash Mobs"] };
+	};
 		--EmeraldSanctum TurtleWOW
 	EmeraldSanctum = {
 		ZoneName = { AL["Emerald Sanctum"],  };
@@ -1820,8 +1841,8 @@ AtlasMaps = {
 		{ GREY.."13) "..AL["Ironforge"]..", "..BLUE..AL["Dun Morogh"], ZONE, 215 };
 		{ GREY.."15) "..AL["Stormwind City"]..", "..BLUE..AL["Elwynn Forest"], ZONE, 15 };
 		{ "" };	
-		{ GREY.."3) "..AL["Orgrimmar"]..", ".._RED..AL["Durotar"], ZONE, 440 };
-		{ GREY.."4) "..AL["Sparkwater Port"]..", ".._RED..AL["Durotar"], ZONE, 361 };
+		{ GREY.."3) "..AL["Orgrimmar"]..", ".._RED..AL["The Barrens"], ZONE, 440 };
+		{ GREY.."4) "..AL["Sparkwater Port"]..", ".._RED..AL["The Barrens"], ZONE, 361 };
 		{ GREY.."6) "..AL["Thunder Bluff"]..", ".._RED..AL["Mulgore"], ZONE, 16 };
 		{ GREY.."10) "..AL["Undercity"]..", ".._RED..AL["Tirisfal Glades"], ZONE, 17 };
 		{ GREY.."11) "..AL["Revantusk Village"]..", ".._RED..AL["The Hinterlands"], ZONE, 17 };
