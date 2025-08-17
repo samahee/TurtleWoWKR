@@ -1,3 +1,4 @@
+-- Initialize all static variables
 local loc = GetLocale()
 local dbs = { "items", "quests", "quests-itemreq", "objects", "units", "zones", "professions", "areatrigger", "refloot" }
 local noloc = { "items", "quests", "objects", "units" }
@@ -83,6 +84,8 @@ local function complete(history, qid)
   local level = pfQuest_history[qid] and pfQuest_history[qid][2] or 0
   history[qid] = { time, level }
 end
+
+-- Temporary workaround for a faction group translation error
 
 -- Add function to query for quest completion
 local query = CreateFrame("Frame")
