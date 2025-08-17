@@ -41,7 +41,7 @@ local reset = {
     local dialog = StaticPopupDialogs["PFQUEST_RESET"]
     dialog.text = L["Do you really want to reset everything?"]
     dialog.OnAccept = function()
-      pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server = nil
+      pfQuest_config, pfBrowser_fav, pfQuest_history, pfQuest_colors, pfQuest_server, pfQuest_questcache = nil
       ReloadUI()
     end
 
@@ -114,6 +114,8 @@ pfQuest_defconfig = {
     default = nil, type = "header" },
   { text = L["Enable Minimap Nodes"],
     default = "1", type = "checkbox", config = "minimapnodes" },
+  { text = L["Use Icons For Tracking Nodes"],
+    default = "1", type = "checkbox", config = "trackingicons" },
   { text = L["Use Monochrome Cluster Icons"],
     default = "0", type = "checkbox", config = "clustermono" },
   { text = L["Use Cut-Out Minimap Node Icons"],
@@ -186,6 +188,7 @@ pfQuestConfig:SetScript("OnEvent", function()
     pfQuest_history = pfQuest_history or {}
     pfQuest_colors = pfQuest_colors or {}
     pfQuest_config = pfQuest_config or {}
+    pfQuest_track = pfQuest_track or {}
     pfBrowser_fav = pfBrowser_fav or {["units"] = {}, ["objects"] = {}, ["items"] = {}, ["quests"] = {}}
 
     -- clear quest history on new characters
@@ -417,7 +420,7 @@ function pfQuestConfig:CreateConfigEntries(config)
     if data.type then
       -- empty line for headers, next column for > 20 entries
       row = row + ( data.type == "header" and row > 1 and 2 or 1 )
-      if row > 20 and data.type == "header" then
+      if row > 22 and data.type == "header" then
         column, row = column + 1, 1
       end
 
@@ -457,13 +460,34 @@ do -- welcome/init popup dialog
     mode = 2
   }
 
+  local desaturate = function(texture, state)
+    local supported = texture:SetDesaturated(state)
+    if not supported then
+      if state then
+        texture:SetVertexColor(0.5, 0.5, 0.5)
+      else
+        texture:SetVertexColor(1.0, 1.0, 1.0)
+      end
+    end
+  end
+
   -- create welcome/init window
   pfQuestInit = CreateFrame("Frame", "pfQuestInit", UIParent)
   pfQuestInit:Hide()
   pfQuestInit:SetWidth(400)
   pfQuestInit:SetHeight(270)
+  pfQuestInit:SetMovable(true)
+  pfQuestInit:EnableMouse(true)
   pfQuestInit:SetPoint("CENTER", 0, 0)
   pfQuestInit:RegisterEvent("PLAYER_ENTERING_WORLD")
+  pfQuestInit:SetScript("OnMouseDown", function()
+    this:StartMoving()
+  end)
+
+  pfQuestInit:SetScript("OnMouseUp", function()
+    this:StopMovingOrSizing()
+  end)
+
   pfQuestInit:SetScript("OnEvent", function()
     if pfQuest_config.welcome ~= "1" then
       -- parse current config
@@ -484,10 +508,10 @@ do -- welcome/init popup dialog
 
   pfQuestInit:SetScript("OnShow", function()
     -- reload ui elements
-    pfQuestInit[1].bg:SetDesaturated(true)
-    pfQuestInit[2].bg:SetDesaturated(true)
-    pfQuestInit[3].bg:SetDesaturated(true)
-    pfQuestInit[config_stage.mode].bg:SetDesaturated(false)
+    desaturate(pfQuestInit[1].bg, true)
+    desaturate(pfQuestInit[2].bg, true)
+    desaturate(pfQuestInit[3].bg, true)
+    desaturate(pfQuestInit[config_stage.mode].bg, false)
     pfQuestInit.checkbox:SetChecked(config_stage.arrow)
   end)
 
@@ -530,11 +554,10 @@ do -- welcome/init popup dialog
     pfUI.api.SkinButton(pfQuestInit[i])
 
     pfQuestInit[i]:SetScript("OnClick", function()
-      pfQuestInit[1].bg:SetDesaturated(true)
-      pfQuestInit[2].bg:SetDesaturated(true)
-      pfQuestInit[3].bg:SetDesaturated(true)
-      pfQuestInit[this:GetID()].bg:SetDesaturated(false)
-
+      desaturate(pfQuestInit[1].bg, true)
+      desaturate(pfQuestInit[2].bg, true)
+      desaturate(pfQuestInit[3].bg, true)
+      desaturate(pfQuestInit[this:GetID()].bg, false)
       config_stage.mode = this:GetID()
     end)
 
@@ -593,7 +616,7 @@ do -- welcome/init popup dialog
   pfQuestInit.save:SetPoint("BOTTOMRIGHT", -10, 10)
   pfQuestInit.save.text = pfQuestInit.save:CreateFontString("Caption", "LOW", "GameFontWhite")
   pfQuestInit.save.text:SetAllPoints(pfQuestInit.save)
-  pfQuestInit.save.text:SetText("Save & Close")
+  pfQuestInit.save.text:SetText(L["Save & Close"])
 
   pfUI.api.SkinButton(pfQuestInit.save)
 
