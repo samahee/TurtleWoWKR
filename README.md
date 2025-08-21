@@ -63,6 +63,11 @@ Data, AddOns 폴더로 구분.
 ## Addon
 한글화와 관련된 애드온만 작성됨.
 
+### SpellTooltipKOR
+터틀와우 영어 클라이언트에서 한글로 마법 이름 출력해주는 애드온.
+아이템은 안되고 마법과 관련된 아이템 및 마법 이름 한글 출력.
+
+
 ### Atlas, AtlasLoot, AtlasQuest
 * [https://github.com/Otari98/AtlasLoot ](https://github.com/Otari98/AtlasLoot)에서 다운로드 가능
 
