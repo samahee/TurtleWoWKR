@@ -81,6 +81,36 @@ local function SpellIDFromTitle(title)
 end
 
 ------------------------------------------------------------
+-- (중요) 주입 스킵 판단:
+--  - 비교툴팁(ShoppingTooltip1/2): 원본 유지
+--  - 캐릭터창/인스펙트/드레스업: 원본 유지
+--  - ★ 은행/가방/상인/경매/우편/액션바 등은 주입 허용
+------------------------------------------------------------
+local function ShouldSkipInjection(tt)
+    if not tt then return true end
+    local tname = tt:GetName() or ""
+
+    -- 비교툴팁은 아예 스킵
+    if tname == "ShoppingTooltip1" or tname == "ShoppingTooltip2" then
+        return true
+    end
+
+    -- 소유자 프레임으로 캐릭터/인스펙트/드레스업만 스킵
+    local owner = tt.GetOwner and tt:GetOwner()
+    local oname = owner and owner.GetName and owner:GetName() or ""
+    if oname and oname ~= "" then
+        if string.find(oname, "^Character") or
+           string.find(oname, "^PaperDoll") or
+           string.find(oname, "^Inspect")   or
+           string.find(oname, "^DressUp") then
+            return true
+        end
+    end
+
+    return false
+end
+
+------------------------------------------------------------
 -- 한글 이름 줄을 '제목 바로 아래'에 삽입 (우측 열 보존)
 ------------------------------------------------------------
 local function InsertNameBelowTitle(tt, localizedName)
@@ -196,7 +226,7 @@ local function HookMethod(tt, methodName, post)  -- post(self, a1, a2, a3, a4)
         local r1, r2, r3, r4 = orig(self, a1, a2, a3, a4)
         -- 툴팁이 채워진 후에 후처리(한글 주입)
         post(self, a1, a2, a3, a4)
-        -- 원본 반환값 그대로 반환 (SetInventoryItem 등에서 중요)
+        -- 원본 반환값 그대로 반환
         return r1, r2, r3, r4
     end
 end
@@ -207,6 +237,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 1) Spellbook
     HookMethod(tt, "SetSpell", function(self, index, bookType)
+        if ShouldSkipInjection(self) then return end
         local sid = TryGetSpellIDFromLink(index, bookType)
         if not sid then sid = SpellIDFromTitle(GetTooltipTitleText(self)) end
         InjectBySpellID(self, sid)
@@ -214,6 +245,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 2) Action Bar
     HookMethod(tt, "SetAction", function(self, slot)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetActionInfo) == "function" then
             local aType, id, subType = GetActionInfo(slot)
@@ -230,6 +262,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 3) Trainer
     HookMethod(tt, "SetTrainerService", function(self, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetTrainerServiceInfo) == "function" then
             local nameTxt = GetTrainerServiceInfo(index)
@@ -238,11 +271,12 @@ local function InstallHooksForTooltip(tt)
         if not sid then InjectByTitleOrBody(self) else InjectBySpellID(self, sid) end
     end)
 
-    -- 4) Bag / Container
+    -- 4) Bag / Container (가방/은행 포함: 은행 메인 컨테이너는 bag=-1)
     HookMethod(tt, "SetBagItem", function(self, bag, slot)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetContainerItemLink) == "function" then
-            local link = GetContainerItemLink(bag, slot)
+            local link = GetContainerItemLink(bag, slot)  -- bag: 0..4 가방, 5..10 은행가방, -1 은행메인
             sid = SpellIDFromItemLink(link)
         end
         if not sid then sid = SpellIDFromTooltipBody(self) end
@@ -250,8 +284,9 @@ local function InstallHooksForTooltip(tt)
         InjectBySpellID(self, sid)
     end)
 
-    -- 5) Inventory(장비창/은행 슬롯 포함)  ← 캐릭터 창 이슈 해결 포인트
+    -- 5) Inventory(장비창/은행 슬롯 포함)  ← 캐릭터창은 스킵되지만 은행 슬롯은 주입 허용
     HookMethod(tt, "SetInventoryItem", function(self, unit, slot)
+        if ShouldSkipInjection(self) then return end  -- unit 검사 삭제: 은행 허용
         local sid
         if type(GetInventoryItemLink) == "function" then
             local link = GetInventoryItemLink(unit, slot)
@@ -264,6 +299,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 6) Merchant(상인)
     HookMethod(tt, "SetMerchantItem", function(self, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetMerchantItemLink) == "function" then
             local link = GetMerchantItemLink(index)
@@ -276,6 +312,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 7) Auction(경매)
     HookMethod(tt, "SetAuctionItem", function(self, listType, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetAuctionItemLink) == "function" then
             local link = GetAuctionItemLink(listType, index)
@@ -288,22 +325,26 @@ local function InstallHooksForTooltip(tt)
 
     -- 8) Quest 보상/로그
     HookMethod(tt, "SetQuestItem", function(self, qType, index)
+        if ShouldSkipInjection(self) then return end
         local sid = SpellIDFromTooltipBody(self) or SpellIDFromTitle(GetTooltipTitleText(self))
         InjectBySpellID(self, sid)
     end)
     HookMethod(tt, "SetQuestLogItem", function(self, qType, index)
+        if ShouldSkipInjection(self) then return end
         local sid = SpellIDFromTooltipBody(self) or SpellIDFromTitle(GetTooltipTitleText(self))
         InjectBySpellID(self, sid)
     end)
 
     -- 9) TradeSkill/Professions
     HookMethod(tt, "SetTradeSkillItem", function(self, skill, index)
+        if ShouldSkipInjection(self) then return end
         local sid = SpellIDFromTooltipBody(self) or SpellIDFromTitle(GetTooltipTitleText(self))
         InjectBySpellID(self, sid)
     end)
 
     -- 10) Hyperlink (채팅 링크 등)
     HookMethod(tt, "SetHyperlink", function(self, link)
+        if ShouldSkipInjection(self) then return end
         local sid
         local _, _, id = string.find(link or "", "Hspell:(%d+)")
         if id then sid = tonumber(id) end
@@ -313,6 +354,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 11) Mailbox — Inbox(받은 편지 첨부)
     HookMethod(tt, "SetInboxItem", function(self, index, attachment)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetInboxItemLink) == "function" then
             local link
@@ -329,6 +371,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 12) Mailbox — SendMail(보내는 편지 첨부)
     HookMethod(tt, "SetSendMailItem", function(self, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetSendMailItem) == "function" and type(GetItemSpell) == "function" then
             local itemName = GetSendMailItem(index)
@@ -344,9 +387,10 @@ local function InstallHooksForTooltip(tt)
         if not sid then sid = SpellIDFromTitle(GetTooltipTitleText(self)) end
         InjectBySpellID(self, sid)
     end)
-    
+
     -- 13-1) Shapeshift / Stance / Aura / Aspect / Stealth (작은 버튼 바)
     HookMethod(tt, "SetShapeshift", function(self, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetShapeshiftFormInfo) == "function" then
             -- (texture, name, isActive, isCastable) in 1.12
@@ -360,6 +404,7 @@ local function InstallHooksForTooltip(tt)
 
     -- 13-2) Pet Action Bar (사냥꾼/흑마 펫 스킬)
     HookMethod(tt, "SetPetAction", function(self, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetPetActionInfo) == "function" then
             -- name, texture, isToken, isActive, autoCastAllowed, autoCastEnabled
@@ -377,10 +422,11 @@ local function InstallHooksForTooltip(tt)
 
     -- 13-3) Minimap Tracking (약초/광맥/야수 추적 버튼)
     HookMethod(tt, "SetTracking", function(self, index)
+        if ShouldSkipInjection(self) then return end
         local sid
         if type(GetTrackingInfo) == "function" then
-            -- 일부 빌드에서는 spellID를 반환하지 않을 수 있음. 있으면 활용.
-            -- (name, texture, active, category, spellID) 형태가 될 수 있음.
+            -- 일부 빌드에서는 spellID를 반환하지 않을 수 있음.
+            -- (name, texture, active, category, spellID)
             local name, _, _, _, spellID = GetTrackingInfo(index)
             if type(spellID) == "number" then
                 sid = spellID
@@ -390,15 +436,15 @@ local function InstallHooksForTooltip(tt)
         end
         if not sid then InjectByTitleOrBody(self) else InjectBySpellID(self, sid) end
     end)
-
 end
 
 ------------------------------------------------------------
 -- 기본 툴팁들에 설치
 ------------------------------------------------------------
 InstallHooksForTooltip(GameTooltip)
-if ShoppingTooltip1 then InstallHooksForTooltip(ShoppingTooltip1) end
-if ShoppingTooltip2 then InstallHooksForTooltip(ShoppingTooltip2) end
+-- 비교툴팁은 원본 유지: 설치 안 함
+-- if ShoppingTooltip1 then InstallHooksForTooltip(ShoppingTooltip1) end
+-- if ShoppingTooltip2 then InstallHooksForTooltip(ShoppingTooltip2) end
 if ItemRefTooltip  then InstallHooksForTooltip(ItemRefTooltip)  end
 
 ------------------------------------------------------------
@@ -421,6 +467,29 @@ if EnumerateFrames then
             InstallHooksForTooltip(f)
         end
         f = EnumerateFrames(f)
+    end
+end
+
+-- Tooltip 본문에서 [SpellName] 등 찾기 (보조) - 안전 가드 버전
+local function SpellIDFromTooltipBody(tt)
+    if not tt or not tt.GetName or not tt.NumLines then return end
+    local tname = tt:GetName() or "GameTooltip"
+    local n = tt:NumLines() or 0
+    local i = 1
+    while i <= n do
+        local left = (getglobal and getglobal(tname.."TextLeft"..i)) or (_G and _G[tname.."TextLeft"..i])
+        if left and left.IsShown and left:IsShown() then
+            local txt = left:GetText()
+            if txt and txt ~= "" then
+                local _, _, inside = string.find(txt, "%[(.-)%]")
+                if inside and alias[inside] then return alias[inside] end
+                local base = string.gsub(txt, "%s*%b()", "")
+                base = string.gsub(base, "^%s*(.-)%s*$", "%1")
+                if alias[base] then return alias[base] end
+                if alias[txt]  then return alias[txt]  end
+            end
+        end
+        i = i + 1
     end
 end
 
