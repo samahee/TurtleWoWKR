@@ -689,10 +689,10 @@ function pfMap:BuildNode(name, parent)
 
   if parent == WorldMapButton then
     f.defalpha = tonumber(pfQuest_config["worldmaptransp"]) or 1
-    f.defsize = 16
+    f.defsize = 14
   else
     f.defalpha = tonumber(pfQuest_config["minimaptransp"]) or 1
-    f.defsize = 16
+    f.defsize = 14
     f.minimap = true
   end
 
@@ -769,6 +769,7 @@ function pfMap:UpdateNode(frame, node, color, obj, distance)
       frame.itemreq     = tab.itemreq
       frame.arrow       = tab.arrow
       frame.icon        = tab.icon
+      frame.fade_range  = tab.fade_range
 
       if pfQuest_config["spawncolors"] == "1" then
         frame.color = tab.spawn or tab.title
@@ -800,12 +801,10 @@ function pfMap:UpdateNode(frame, node, color, obj, distance)
       frame.pic:Show()
 
       if obj == "minimap" then
-        -- Start fading the icon at 72% and have the icon fully
-        -- translucent at 80% of half the minimap size.
-        -- Fade animation range between 72% and 80%.
         local halfsize = pfMap.drawlayer:GetWidth()/2
-        local fade_in = halfsize/100*72
-        local fade_out = halfsize/100*80
+        local fade_range = frame.fade_range or 8
+        local fade_in = halfsize/100*(fade_range-4)
+        local fade_out = halfsize/100*(fade_range+4)
         local alpha = ((distance or fade_out) - fade_in) / (fade_out - fade_in)
         alpha = math.max(alpha, 0)
         alpha = math.min(alpha, 1)
@@ -839,7 +838,7 @@ function pfMap:UpdateNode(frame, node, color, obj, distance)
   local target = frame.texture and pfQuest.route and pfQuest.route.IsTarget(frame) or nil
 
   -- set default sizes for different node types
-  frame.defsize = (frame.cluster or frame.layer == 4) and 22 or 16
+  frame.defsize = (frame.cluster or frame.layer == 4) and 18 or 14
 
   -- make the current route target visible
   if target then frame.hl:Show() else frame.hl:Hide() end

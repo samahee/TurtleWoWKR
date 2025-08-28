@@ -14,6 +14,14 @@ local function patchtable(base, diff)
   end
 end
 
+-- Detect a typo from old clients and re-apply the typo to the zones table
+-- This is a workaround which is required until all clients are updated
+for id, name in pairs({GetMapZones(2)}) do
+  if name == "Northwind " then
+    pfDB["zones"]["enUS-turtle"][5581] = "Northwind "
+  end
+end
+
 local loc_core, loc_update
 for _, db in pairs(dbs) do
   if pfDB[db]["data-turtle"] then
@@ -83,6 +91,22 @@ local function complete(history, qid)
   local time = pfQuest_history[qid] and pfQuest_history[qid][1] or 0
   local level = pfQuest_history[qid] and pfQuest_history[qid][2] or 0
   history[qid] = { time, level }
+
+  -- complete all quests that are closed by the selcted one
+  local close = pfDB["quests"]["data"][qid] and pfDB["quests"]["data"][qid]["close"]
+  if close then
+    for _, qid in pairs(close) do
+      if not history[qid] then complete(history, qid) end
+    end
+  end
+
+  -- make sure all prequests are marked as done aswell
+  local prequests = pfDB["quests"]["data"][qid] and pfDB["quests"]["data"][qid]["pre"]
+  if prequests then
+    for _, qid in pairs(prequests) do
+      if not history[qid] then complete(history, qid) end
+    end
+  end
 end
 
 -- Temporary workaround for a faction group translation error
@@ -94,7 +118,6 @@ query:Hide()
 query:SetScript("OnEvent", function()
   if arg1 == "TWQUEST" then
     for _, qid in pairs({strsplit(" ", arg2)}) do
-      this.count = this.count + 1
       complete(this.history, tonumber(qid))
     end
   end
@@ -102,7 +125,6 @@ end)
 
 query:SetScript("OnShow", function()
   this.history = {}
-  this.count = 0
   this.time = GetTime()
   this:RegisterEvent("CHAT_MSG_ADDON")
   SendChatMessage(".queststatus", "GUILD")

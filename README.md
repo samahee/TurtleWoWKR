@@ -9,11 +9,11 @@
 ## 한글화 범위
 * 마법 설명
 * 아이템 속성, 착용 효과, 발동효과 등등 모두 한글화
-* 퀘스트 (단, 신규 퀘스트는 수행 작업만 한글화 예정)
+* 퀘스트 (단, 신규 퀘스트는 목표만 한글화)
 * 평판 목록
 * 아이템 마부 속성
-* 1.18 버전의 발로르 지역 제외 모두 한글 표시
-* 이에, AtlasLoot와 같은 곳에서 이름을 제외하고 대부분 한글로 보여짐.
+* *1.18 버전부터 지역 이름 한글화는 TooltipKOR-TW에서 진행*
+* AtlasLoot/PallyPowerTW/HealMate 등 해외에서 만들어진 대부분의 애드온은 사용 가능.
 * **애드온 관련 이슈가 많이 발생하는 한글화는 추후 삭제 예정이지만 반대의 경우도 가능**
 
 ## 다운로드 런처를 위한 변경 사항
@@ -64,7 +64,7 @@ Data, AddOns 폴더로 구분.
 한글화와 관련된 애드온만 작성됨.
 
 ### TooltipKOR-TW
-* 터틀와우 영어 클라이언트에서 마법, 아이템, 유닛, 오브젝트 이름을 한글로 출력해주는 애드온.  
+* 터틀와우 영어 클라이언트에서 지역이름, 마법, 아이템, 유닛, 오브젝트 이름을 한글로 출력해주는 애드온.  
 * [https://github.com/samahee/TooltipKOR-TW ](https://github.com/samahee/TooltipKOR-TW)에서 다운로드 가능  
 * *터틀와우 전용이며, 반드시 pfquest, pfquest-turtle가 설치되어 있어야 합니다.*
 
@@ -85,12 +85,13 @@ Data, AddOns 폴더로 구분.
 
 ### pfQuest
 * Quest Tracker이며, 한글 번역 기능 제공.(단, 퀘스트 제목이 정확하게 와야됨)
-* 퀘스트 페이지에서 **Translate를 클릭**해서 **Korean 선택**.
+* 퀘스트 페이지에서 **Translate를 클릭**해서 **Korean/English 모두 선택 가능**.
 * 클라이언트 적용 버전 - 바닐라(와우 오리지널 1.12.1 버전 적용)
 
 ### pfQuest-turtle
 * **터틀 와우 전용 퀘스트 한글화**
-* 터틀 와우 클라이언트 적용 버전 - 1.18
+* * 퀘스트 페이지에서 **Translate를 클릭**해서 **Korean/English 모두 선택 가능**.
+* 터틀 와우 1.18에서 추가된 퀘스트 중 목표만 한글 번역 완료 (2025.08.28)
 * 터틀와우 전용 퀘스트 제목은 영어로 고정.
 
 ### Mendeleev
@@ -104,7 +105,7 @@ Data, AddOns 폴더로 구분.
 * 경매장 애드온.
 * 대량으로 팔기 편하며, 검색속도가 다른 경매장 애드온에 비해 압도적으로 빠름.
 
-## WoW.exe 패치 (선택사항)
+## WoW.exe 패치 (선택사항) - 다운로드 런처에서 제공해주는 기능이므로 설치안해도 됨.
 * 와이드 스크린 FoV 적용, **루팅 시 쉬프트 키 안눌러도 모든 아이템 가방에 들어가는 패치**.
 * [vanilla-tweaks](https://github.com/brndd/vanilla-tweaks/releases/download/v1.6.0/vanilla-tweaks_v1.6.0_x86_64-pc-windows-gnu.zip) 다운로드
 * 와우 폴더의 Wow.exe와 같은 위치에서 압축 해재.
@@ -113,5 +114,3 @@ Data, AddOns 폴더로 구분.
 * WoW_tweaked.exe 파일이 생성되며, 해당 파일을 실행.
 * 보다 자세한 설명은 [링크](https://github.com/brndd/vanilla-tweaks)에서 확인 가능
 
-
-#### 문제가 발생하면 상단의 Issues에 남겨주세요.

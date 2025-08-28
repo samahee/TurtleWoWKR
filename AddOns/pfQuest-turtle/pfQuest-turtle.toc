@@ -14,6 +14,7 @@ init\esES-turtle.xml
 init\ptBR-turtle.xml
 init\zhCN-turtle.xml
 init\ruRU-turtle.xml
+init\koKR-turtle.xml
 
 overwrites.lua
 

@@ -60,9 +60,10 @@ local debugsql = {
   --
   ["minimap"] = { "Using client data to read minimap zoom levels" },
   --
-  ["meta_taxi"] = { "Using client and mangos data to find flight masters" },
   ["meta_rares"] = { "Using client and mangos data to find rare mobs" },
-  ["meta_farm"] = { "Using client and mangos data to find chests, herbs and mines" },
+  ["meta_npcs"] = { "Using client and mangos data to find npcs" },
+  ["meta_objects"] = { "Using client and mangos data to find objects" },
+  ["meta_openable"] = { "Using client and mangos data to find chests, herbs and mines" },
   --
   ["locales_unit"] = { "Using mangos data to find unit translations" },
   ["locales_object"] = { "Using mangos data to find object translations" },
@@ -104,6 +105,7 @@ local all_locales = {
   ["zhTW"] = 5,
   ["esES"] = 6,
   ["ruRU"] = 8,
+  ["ptBR"] = 10,
 }
 
 local config = {
@@ -903,7 +905,7 @@ for id, settings in pairs(config.expansions) do
         local fac = ""
         local faction = {}
         local sql = [[
-          SELECT A FROM gameobject_template, pfquest.FactionTemplate_]]..expansion..[[
+          SELECT A, H FROM gameobject_template, pfquest.FactionTemplate_]]..expansion..[[
           WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = gameobject_template.faction
           AND gameobject_template.entry = ]] .. gameobject_template.entry
 
@@ -1107,7 +1109,19 @@ for id, settings in pairs(config.expansions) do
       local chain = tonumber(quest_template.NextQuestInChain)
       local srcitem = tonumber(quest_template.SrcItemId)
       local repeatable = tonumber(quest_template.SpecialFlags) & 1
+      local exclusive = tonumber(quest_template.ExclusiveGroup)
+      local close = nil
       local event = nil
+
+      -- seach for quests closed by this one
+      if exclusive and exclusive > 0 then
+        close = close or {}
+        local exclusive_template = {}
+        local query = mysql:execute('SELECT entry, ExclusiveGroup FROM quest_template WHERE ExclusiveGroup = ' .. exclusive .. ' GROUP BY quest_template.entry')
+        while query:fetch(exclusive_template, "a") do
+          table.insert(close, tonumber(exclusive_template.entry))
+        end
+      end
 
       -- try to detect event by quest event entry
       local game_event_quest = {}
@@ -1158,6 +1172,7 @@ for id, settings in pairs(config.expansions) do
       pfDB["quests"][data][entry]["race"] = race ~= 0 and race
       pfDB["quests"][data][entry]["skill"] = skill ~= 0 and skill
       pfDB["quests"][data][entry]["event"] = event ~= 0 and event
+      pfDB["quests"][data][entry]["close"] = close and close
 
       -- quest objectives
       local units, objects, items, itemreq, areatrigger, zones, pre = {}, {}, {}, {}, {}, {}, {}
@@ -1537,26 +1552,6 @@ for id, settings in pairs(config.expansions) do
       ["flight"] = {},
     }
 
-    do -- flightmasters
-      local mask = core == "vmangos" and 8 or 8192
-      local creature_template = {}
-      local query = mysql:execute([[
-        SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
-        WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
-        AND ( ]] .. C.NpcFlags .. [[ & ]]..mask..[[) > 1
-      ]])
-
-      while query:fetch(creature_template, "a") do
-        if debug("meta_taxi") then break end
-        local fac = ""
-        local entry = tonumber(creature_template.Entry)
-        local A = tonumber(creature_template.A)
-        local H = tonumber(creature_template.H)
-        if A >= 0 then fac = fac .. "A" end
-        if H >= 0 then fac = fac .. "H" end
-        pfDB["meta"..exp]["flight"][entry] = fac
-      end
-    end
 
     do -- raremobs
       local creature_template = {}
@@ -1572,7 +1567,88 @@ for id, settings in pairs(config.expansions) do
       end
     end
 
-    do -- gameobject relations
+    do -- npcs
+      local creature_flags = {
+        [4] = "vendor",
+        [8] = "flight",
+        [32] = "spirithealer",
+        [64] = "spirithealer",
+        [128] = "innkeeper",
+        [256] = "banker",
+        [2048] = "battlemaster",
+        [4096] = "auctioneer",
+        [8192] = "stablemaster",
+        [16384] = "repair",
+      }
+
+      local tbc_flag_map = {
+        [4] = 128, [8] = 8192, [32] = 16384, [64] = 32768,
+        [128] = 65536, [256] = 20000, [2048] = 1048576,
+        [4096] = 2097152, [8192] = 4194304, [16384] = 4096,
+      }
+
+      for mask, name in pairs(creature_flags) do
+        -- create meta relation table if not existing
+        pfDB["meta"..exp][name] = pfDB["meta"..exp][name] or {}
+
+        local mask = core == "vmangos" and mask or tbc_flag_map[mask]
+
+        local creature_template = {}
+        local query = mysql:execute([[
+          SELECT Entry, A, H FROM `creature_template`, `pfquest`.FactionTemplate_]]..expansion..[[
+          WHERE pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = creature_template.]] .. C.Faction .. [[
+          AND ( ]] .. C.NpcFlags .. [[ & ]]..mask..[[) > 0
+        ]])
+
+        while query:fetch(creature_template, "a") do
+          if debug("meta_npcs") then break end
+          local fac = ""
+          local entry = tonumber(creature_template.Entry)
+          local A = tonumber(creature_template.A)
+          local H = tonumber(creature_template.H)
+          if A >= 0 then fac = fac .. "A" end
+          if H >= 0 then fac = fac .. "H" end
+          pfDB["meta"..exp][name][entry] = fac
+        end
+      end
+    end
+
+    do -- objects
+      local gameobject_flags = {
+        [19] = "mailbox",
+        [23] = "meetingstone",
+        [25] = "fish",
+      }
+
+      for flag, name in pairs(gameobject_flags) do
+        -- create meta relation table if not existing
+        pfDB["meta"..exp][name] = pfDB["meta"..exp][name] or {}
+
+        -- gameobject_template.type
+        local gameobject_template = {}
+        local query = mysql:execute([[
+          SELECT * FROM `gameobject_template`
+          LEFT JOIN pfquest.FactionTemplate_]]..expansion..[[
+          ON pfquest.FactionTemplate_]]..expansion..[[.factiontemplateID = gameobject_template.faction
+          WHERE `type` = ]]..flag..[[
+        ]])
+
+        while query:fetch(gameobject_template, "a") do
+          if debug("meta_objects") then break end
+          local entry = tonumber(gameobject_template.entry) * -1
+          local A = tonumber(gameobject_template.A)
+          local H = tonumber(gameobject_template.H)
+          local fac = ""
+
+          if not A or A >= 0 then fac = fac .. "A" end
+          if not H or H >= 0 then fac = fac .. "H" end
+
+          pfDB["meta"..exp][name][entry] = fac
+        end
+      end
+    end
+
+    do -- openables
       local gameobject_template = {}
       local query = mysql:execute([[
         SELECT * FROM `gameobject_template`, pfquest.Lock_]]..expansion..[[
@@ -1580,7 +1656,7 @@ for id, settings in pairs(config.expansions) do
       ]])
 
       while query:fetch(gameobject_template, "a") do
-        if debug("meta_farm") then break end
+        if debug("meta_openable") then break end
         local entry   = tonumber(gameobject_template.entry) * -1
         local data = tonumber(gameobject_template.data)
         local skill = tonumber(gameobject_template.skill)
@@ -1760,12 +1836,12 @@ for id, settings in pairs(config.expansions) do
       local locale = loc .. exp
       local prev_locale = loc
 
-      pfDB["units"][locale] = tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale])
-      pfDB["objects"][locale] = tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale])
-      pfDB["items"][locale] = tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale])
-      pfDB["quests"][locale] = tablesubstract(pfDB["quests"][locale], pfDB["quests"][prev_locale])
-      pfDB["zones"][locale] = tablesubstract(pfDB["zones"][locale], pfDB["zones"][prev_locale])
-      pfDB["professions"][locale] = tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale])
+      pfDB["units"][locale] = pfDB["units"][locale] and tablesubstract(pfDB["units"][locale], pfDB["units"][prev_locale]) or {}
+      pfDB["objects"][locale] = pfDB["objects"][locale] and tablesubstract(pfDB["objects"][locale], pfDB["objects"][prev_locale]) or {}
+      pfDB["items"][locale] = pfDB["items"][locale] and tablesubstract(pfDB["items"][locale], pfDB["items"][prev_locale]) or {}
+      pfDB["quests"][locale] = pfDB["quests"][locale] and tablesubstract(pfDB["quests"][locale], pfDB["quests"][prev_locale]) or {}
+      pfDB["zones"][locale] = pfDB["zones"][locale] and tablesubstract(pfDB["zones"][locale], pfDB["zones"][prev_locale]) or {}
+      pfDB["professions"][locale] = pfDB["professions"][locale] and tablesubstract(pfDB["professions"][locale], pfDB["professions"][prev_locale]) or {}
     end
   end
 

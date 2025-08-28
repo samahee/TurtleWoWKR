@@ -753,7 +753,7 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
 
   if pfDB["meta"] and pfDB["meta"][track] then
     -- check which faction should be searched
-    local faction = query.faction and string.lower(query.faction) or string.lower(UnitFactionGroup("player"))
+    local faction = query.faction and string.lower(query.faction) or (UnitFactionGroup("player") and string.lower(UnitFactionGroup("player")))
     faction = faction == "horde" and "H" or faction == "alliance" and "A" or ""
 
     -- iterate over all tracking entries
@@ -769,6 +769,9 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
         local object = pfDB["objects"]["loc"][math.abs(entry)]
         local unit = pfDB["units"]["loc"][entry]
 
+        -- set node as tracking result
+        meta.tracking = true
+
         -- handle custom tracking icons
         if pfQuest_config.trackingicons == "0" then
           meta.icon = nil
@@ -778,13 +781,24 @@ function pfDatabase:SearchMetaRelation(query, meta, show)
           meta.icon = pfDatabase.icons[unit]
         end
 
+        -- set custom fade range for skill-trackables
+        if meta.icon and skill[track] then
+          meta.fade_range = 85
+        elseif meta.icon then
+          meta.fade_range = 10
+        else
+          meta.fade_range = nil
+        end
+
         if entry < 0 then
           pfDatabase:SearchObjectID(math.abs(entry), meta, maps)
         else
           pfDatabase:SearchMobID(entry, meta, maps)
         end
 
+        -- reset meta table
         meta.icon = prev_icon
+        meta.tracking = false
       end
     end
   end
@@ -1142,7 +1156,7 @@ function pfDatabase:SearchQuestID(id, meta, maps)
           if meta["qlogid"] then
             local _, _, _, _, _, complete = compat.GetQuestLogTitle(meta["qlogid"])
             complete = complete or GetNumQuestLeaderBoards(meta["qlogid"]) == 0 and true or nil
-            if complete then
+            if complete == true or complete == 1 then
               meta["texture"] = pfQuestConfig.path.."\\img\\complete_c"
             else
               meta["texture"] = pfQuestConfig.path.."\\img\\complete"
